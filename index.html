@@ -1,0 +1,850 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
+    
+    
+      
+        <title>Conda glossary</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1118c9be.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ba0d045b.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4cae4f">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="green" data-md-color-accent="orange">
+  
+    
+    <script>function __prefix(e){return new URL(".",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conda-glossary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Conda glossary" class="md-header__button md-logo" aria-label="Conda glossary" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 1.25a.75.75 0 0 0-1.5 0v8.69L6.447 5.385a.75.75 0 1 0-1.061 1.06L9.94 11H1.25a.75.75 0 0 0 0 1.5h8.69l-4.554 4.553a.75.75 0 0 0 1.06 1.061L11 13.561v8.689a.75.75 0 0 0 1.5 0v-8.69l4.553 4.554a.75.75 0 0 0 1.061-1.06L13.561 12.5h8.689a.75.75 0 0 0 0-1.5h-8.69l4.554-4.553a.75.75 0 1 0-1.06-1.061L12.5 9.939V1.25z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Conda glossary
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Conda glossary
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Conda glossary" class="md-nav__button md-logo" aria-label="Conda glossary" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.5 1.25a.75.75 0 0 0-1.5 0v8.69L6.447 5.385a.75.75 0 1 0-1.061 1.06L9.94 11H1.25a.75.75 0 0 0 0 1.5h8.69l-4.554 4.553a.75.75 0 0 0 1.06 1.061L11 13.561v8.689a.75.75 0 0 0 1.5 0v-8.69l4.553 4.554a.75.75 0 0 0 1.061-1.06L13.561 12.5h8.689a.75.75 0 0 0 0-1.5h-8.69l4.554-4.553a.75.75 0 1 0-1.06-1.061L12.5 9.939V1.25z"/></svg>
+
+    </a>
+    Conda glossary
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Conda glossary
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Conda glossary
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#package-managers" class="md-nav__link">
+    Package Managers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflows" class="md-nav__link">
+    Workflows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conda-package-builders" class="md-nav__link">
+    Conda Package Builders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wheel-builders" class="md-nav__link">
+    Wheel Builders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bundlers-installer-creation-redistribution" class="md-nav__link">
+    Bundlers / Installer Creation / Redistribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-publishing" class="md-nav__link">
+    Package Publishing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-infrastructure-tooling" class="md-nav__link">
+    CI / Infrastructure Tooling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-conversion" class="md-nav__link">
+    Package Conversion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-validation-mangling-signing" class="md-nav__link">
+    Package Validation / Mangling / Signing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    Virtual Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index-serving" class="md-nav__link">
+    Index Serving
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-instructions" class="md-nav__link">
+    Build Instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-instructions" class="md-nav__link">
+    Install Instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-formats" class="md-nav__link">
+    Package Formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specs" class="md-nav__link">
+    Specs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installer-provision" class="md-nav__link">
+    Installer Provision
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-distributions" class="md-nav__link">
+    Python Distributions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizations" class="md-nav__link">
+    Organizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-repositories" class="md-nav__link">
+    Package Repositories
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#package-managers" class="md-nav__link">
+    Package Managers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflows" class="md-nav__link">
+    Workflows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conda-package-builders" class="md-nav__link">
+    Conda Package Builders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wheel-builders" class="md-nav__link">
+    Wheel Builders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bundlers-installer-creation-redistribution" class="md-nav__link">
+    Bundlers / Installer Creation / Redistribution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-publishing" class="md-nav__link">
+    Package Publishing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ci-infrastructure-tooling" class="md-nav__link">
+    CI / Infrastructure Tooling
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-conversion" class="md-nav__link">
+    Package Conversion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-validation-mangling-signing" class="md-nav__link">
+    Package Validation / Mangling / Signing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#virtual-environments" class="md-nav__link">
+    Virtual Environments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index-serving" class="md-nav__link">
+    Index Serving
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-instructions" class="md-nav__link">
+    Build Instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-instructions" class="md-nav__link">
+    Install Instructions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-formats" class="md-nav__link">
+    Package Formats
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specs" class="md-nav__link">
+    Specs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installer-provision" class="md-nav__link">
+    Installer Provision
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-distributions" class="md-nav__link">
+    Python Distributions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizations" class="md-nav__link">
+    Organizations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts" class="md-nav__link">
+    Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-repositories" class="md-nav__link">
+    Package Repositories
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="conda-glossary">Conda glossary</h1>
+<p>An overview of the conda universe and all the satellitary tools we can find out there.</p>
+<h3 id="package-managers">Package Managers</h3>
+<dl>
+<dt>conda</dt>
+<dd>A cross-platform, language-agnostic package manager created by Anaconda Inc.</dd>
+<dt>mamba</dt>
+<dd>A drop-in replacement for conda developed by QuantStack. Some parts, like the solver, were rewritten in C++ for pefromance.</dd>
+<dt>micromamba</dt>
+<dd>A full C++ rewrite of most parts of the conda package manager, also developed by QuantStack. It does not require a Python installation.</dd>
+<dt>pip</dt>
+<dd>PyPA's de facto Python package manager.</dd>
+</dl>
+<h3 id="workflows">Workflows</h3>
+<dl>
+<dt>poetry</dt>
+<dd>Poetry helps you declare, manage and install dependencies of Python projects, ensuring you have the right stack everywhere.</dd>
+<dt>flit</dt>
+<dd>Flit is a simple way to put Python packages and modules on PyPI. It tries to require less thought about packaging and help you avoid common mistakes.</dd>
+<dt>conda-devenv</dt>
+<dd>A conda tool to work with multiple projects in development mode.</dd>
+<dt>pipenv</dt>
+<dd>Pipenv harnesses Pipfile, pip, and virtualenv into one single command.</dd>
+</dl>
+<h3 id="conda-package-builders">Conda Package Builders</h3>
+<dl>
+<dt>conda-build</dt>
+<dd>The de facto tool to create conda packages. It creates environments to isolate build-times dependencies and performs checks after compilation to ensure relocatability and correct runtime dependencies.</dd>
+<dt>boa</dt>
+<dd>Boa does to conda-build what Mamba did for conda-install: it replaces slow parts with C++ code to improve performance and debuggability.</dd>
+<dt>mambabuild</dt>
+<dd>A drop-in replacement for conda-build provided by Boa. It relies on conda-build for most parts, but replaces the solver and the error reports. It provides the 'conda mambabuild' command.</dd>
+</dl>
+<h3 id="wheel-builders">Wheel Builders</h3>
+<dl>
+<dt>meson</dt>
+<dd>Meson is an open source build system meant to be both extremely fast, and, even more importantly, as user friendly as possible. It can produce Python wheels through the mesonpep517 package.</dd>
+<dt>mesonpep517</dt>
+<dd>A simple module that implements PEP517 for the meson build system.</dd>
+<dt>pypa/build</dt>
+<dd>It invokes the PEP 517 hooks to build a distribution package. It is a simple build tool and does not perform any dependency management.</dd>
+<dt>scikit-build</dt>
+<dd>Improved build system generator for CPython C/C++/Fortran/Cython extensions. The scikit-build package is fundamentally just glue between the setuptools Python module and CMake.</dd>
+<dt>setuptools</dt>
+<dd>Setuptools is a collection of enhancements to the Python distutils library to easily build and distribute Python packages.</dd>
+<dt>distutils</dt>
+<dd>The distutils package in the standard library provides support for building and installing additional modules into a Python installation. Most Python users will not want to use this module directly, but enhanced alternatives like setuptools.</dd>
+<dt>numpy.distutils</dt>
+<dd>This Numpy subpackage provides enhanced distutils functionality to make it easier to build and install sub-packages, auto-generate code, and extension modules that use Fortran-compiled libraries.</dd>
+</dl>
+<h3 id="bundlers-installer-creation-redistribution">Bundlers / Installer Creation / Redistribution</h3>
+<dl>
+<dt>constructor</dt>
+<dd>Constructor is a tool which allows constructing an installer for a collection of conda packages. It solves needed packages using user-provided specifications, and bundles those packages.</dd>
+<dt>pex</dt>
+<dd>pex is a library for generating .pex (Python EXecutable) files which are executable Python environments in the spirit of virtualenvs. pex is an expansion upon the ideas outlined in PEP 441.</dd>
+<dt>shiv</dt>
+<dd>shiv is a command line utility for building fully self contained Python zipapps as outlined in PEP 441, but with all their dependencies included.</dd>
+<dt>pyinstaller</dt>
+<dd>PyInstaller freezes (packages) Python applications into stand-alone executables, under Windows, GNU/Linux, Mac OS X, FreeBSD, Solaris and AIX.</dd>
+<dt>conda-pack</dt>
+<dd>conda-pack is a command line tool for creating relocatable archives of conda environments that can be installed on other systems and locations.</dd>
+<dt>conda-docker</dt>
+<dd>Create minimal Docker images from conda environments, without using Docker.</dd>
+<dt>conda-store</dt>
+<dd>The core philosophy of conda-store is to serve identical conda environments in as many ways as possible. Conda Store controls the environment lifecycle: management, builds, and serving of environments.</dd>
+</dl>
+<h3 id="package-publishing">Package Publishing</h3>
+<dl>
+<dt>anaconda-client</dt>
+<dd>This is a command line client that provides an interface to Anaconda Cloud. Primarily used to upload packages to Anaconda.org channels.</dd>
+<dt>twine</dt>
+<dd>A utility for publishing Python packages on PyPI. It provides build system independent uploads of source and binary distribution artifacts for both new and existing projects.</dd>
+<dt>zest.releaser</dt>
+<dd>zest.releaser is collection of command-line programs to help you automate the task of releasing a Python project. It updates the version number, populates the changelog, creates the tags and, optionally, publishes to PyPI.</dd>
+</dl>
+<h3 id="ci-infrastructure-tooling">CI / Infrastructure Tooling</h3>
+<dl>
+<dt>conda-smithy</dt>
+<dd>conda-smithy is a tool for combining a conda recipe with configurations to build using freely hosted CI services into a single repository, also known as a feedstock.</dd>
+<dt>conda-forge-ci-setup</dt>
+<dd>A package installed by conda-forge each time a build is run on CI. It normalizes the system settings found on different CI providers for a consistent build configuration across platforms.</dd>
+<dt>conda-forge-pinning</dt>
+<dd>The baseline versions of software for the conda-forge ecosystem, essential to maintain ABI compatibility across the channel.</dd>
+<dt>cibuildwheel</dt>
+<dd>Build Python wheels for all the platforms on CI with minimal configuration.</dd>
+<dt>multibuild</dt>
+<dd>Machinery for building and testing Python Wheels for Linux, OSX and (less flexibly) Windows.</dd>
+</dl>
+<h3 id="package-conversion">Package Conversion</h3>
+<dl>
+<dt>conda-skeleton</dt>
+<dd>The conda-skeleton command picks up the PyPI package metadata and prepares an equivalent conda-build recipe you can use to build a conda package.</dd>
+<dt>conda_package_handling</dt>
+<dd>Create, extract and convert conda packages of various formats.</dd>
+<dt>grayskull</dt>
+<dd>The Grayskull project was created with the intention to eventually replace the conda skeleton. The main goal of this project is to generate concise recipes for conda-forge.</dd>
+<dt>conda-press</dt>
+<dd>Press conda packages into wheels. Is allows us to build out a pip-usable package index which is ABI compatible with conda packages.</dd>
+</dl>
+<h3 id="package-validation-mangling-signing">Package Validation / Mangling / Signing</h3>
+<dl>
+<dt>conda-verify</dt>
+<dd>conda-verify is a tool for (passively) verifying conda recipes and conda packages. The purpose of this verification process is to ensure that recipes don't contain obvious bugs.</dd>
+<dt>conda-content-trust</dt>
+<dd>Signing and verification tools for Conda based on The Update Framework</dd>
+<dt>auditwheel</dt>
+<dd>a command line tool to facilitate the creation of Python wheel packages for Linux (containing pre-compiled binary extensions) that are compatible with a wide variety of Linux distributions</dd>
+<dt>pip-check</dt>
+<dd>Verify installed packages have compatible dependencies.</dd>
+<dt>delocate</dt>
+<dd>Find and copy needed dynamic libraries into python wheels</dd>
+<dt>check-wheel-contents</dt>
+<dd>Check the contents of your wheel. It will notify you of several common errors &amp; mistakes that can be detected.</dd>
+<dt>machomachomangler</dt>
+<dd>This is a little library for mangling Mach-O and PE files in various ways. These are the formats used for executables and shared libraries on MacOS and Windows, respectively.</dd>
+<dt>patchelf</dt>
+<dd>A small utility to modify the dynamic linker and RPATH of ELF executables.</dd>
+<dt>lief</dt>
+<dd>The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.</dd>
+</dl>
+<h3 id="virtual-environments">Virtual Environments</h3>
+<dl>
+<dt>virtualenv</dt>
+<dd>virtualenv is a tool to create isolated Python environments. Since Python 3.3, a subset of it has been integrated into the standard library under the venv module.</dd>
+<dt>venv</dt>
+<dd>The venv module in the standard library provides support for creating lightweight virtual environments with their own site directories, optionally isolated from system site directories.</dd>
+<dt>virtualenvwrapper</dt>
+<dd>virtualenvwrapper is a set of extensions to Ian Bicking’s virtualenv tool. The extensions include wrappers for creating and deleting virtual environments and otherwise managing your development workflow,</dd>
+<dt>conda-env</dt>
+<dd>Conda/Mamba/Micromamba are able to handle their own virtual environments through 'conda env'. They are not compatible with virtualenv-type environments, but they serve the same purpose.</dd>
+</dl>
+<h3 id="index-serving">Index Serving</h3>
+<dl>
+<dt>conda-index</dt>
+<dd>Update package index metadata files (channeldata.json, repodata.json) in directories containing conda packages.</dd>
+<dt>conda-mirror</dt>
+<dd>Mirrors an upstream conda channel to a local directory.</dd>
+<dt>quetz</dt>
+<dd>The quetz project is an open source server for conda packages. It reimplements Anaconda.org functionalities with an API-first approach.</dd>
+<dt>warehouse</dt>
+<dd>Warehouse is the software that powers PyPI.</dd>
+<dt>devpi</dt>
+<dd>Python PyPi staging server and packaging, testing, release tool</dd>
+<dt>pypiserver</dt>
+<dd>pypiserver is a minimal PyPI compatible server for pip or easy_install. It is based on bottle and serves packages from regular directories.</dd>
+</dl>
+<h3 id="build-instructions">Build Instructions</h3>
+<dl>
+<dt>meta.yaml</dt>
+<dd>All the metadata in the conda-build recipe is specified in the meta.yaml file. It contains info such as the package name, version, source URL, build dependencies, runtime requirements, tests and licensing. It supports Jinja and platform selectors.</dd>
+<dt>conda_build_config.yaml</dt>
+<dd>Conda build can produce variants of the same package (e.g. different Python versions). This file controls the variables injected to meta.yaml. This is the main mechanism behind 'conda-forge-pinning'.</dd>
+<dt>setup.py</dt>
+<dd>Distutils/setuptools script that provides a function to install a Python package with or without compiled extensions.</dd>
+<dt>setup.cfg</dt>
+<dd>Accompanying metadata file for setup.py that defines some configuration parameters.</dd>
+<dt>pyproject.toml</dt>
+<dd>Static file that provides all the information necessary to create an installable Python package. This alleviates the main problem of setup.py: its contents are dynamic and need to be executed to get retrieved.</dd>
+</dl>
+<h3 id="install-instructions">Install Instructions</h3>
+<dl>
+<dt>environment.yaml</dt>
+<dd>A file specifying conda packages and what channels to get them from. Users can also add pip packages here. It can be ingested by conda/mamba env and micromamba create. The tool will solve the environment and install the required packages.</dd>
+<dt>conda.lock</dt>
+<dd>Contains the definitions of an already solved conda environment. It can be generated by conda-lock, and consumed by conda install -f.</dd>
+<dt>poetry.lock</dt>
+<dd>Similar to conda-lock, Poetry can freeze an existing virtual environment, writing the exact package definitions to this file.</dd>
+<dt>Pipfile.lock</dt>
+<dd>When Pipfile or pipenv create an environment, it can be frozen to exact specifications into this file.</dd>
+<dt>requirements.txt</dt>
+<dd>A file containing a list of packages (and some command line options) to be installed by pip.</dd>
+<dt>repodata.json</dt>
+<dd>Conda channels store package metadata for each architecture (linux-64, win-64, etc) in these JSON files. Each package reports here which package they depend on, among other things.</dd>
+<dt>current_repodata.json</dt>
+<dd>Stripped down repodata.json which only contains the last build of each package, plus their dependencies, recursively. It simplifies the solver stage in some cases.</dd>
+<dt>channeldata.json</dt>
+<dd>A channel-wide metadata file that contains an index of all the conda packages present across all architectures in the channel.</dd>
+</dl>
+<h3 id="package-formats">Package Formats</h3>
+<dl>
+<dt>.tar.bz2</dt>
+<dd>Conda packages are distributed as bzip2-compressed tarballs, including the package files and some metadata.</dd>
+<dt>.conda</dt>
+<dd>The new generation format for conda packages separates metadata from package files for quicker access. Still under deployment.</dd>
+<dt>sdist</dt>
+<dd>A source code distribution available in PyPI. Pip will prefer wheels by default.</dd>
+<dt>wheel</dt>
+<dd>Platform-specific build of a PypI package that can contain compiled libraries. Pip will prefer this if a sdist is present.</dd>
+</dl>
+<h3 id="specs">Specs</h3>
+<dl>
+<dt>CFEP</dt>
+<dd>Conda Forge Enhancement Proposal. A document that formalizes a request for comments or changes in the conda-forge community.</dd>
+<dt>CEP</dt>
+<dd>Conda Enhancement Proposal. A document that formalizes a request for comments or changes in the conda tooling managed by Anaconda.</dd>
+<dt>PEP</dt>
+<dd>Python Enhancement Proposal. A document that formalizes a request for comments or changes in the Python language and its governance.</dd>
+<dt>PEP440</dt>
+<dd>This PEP describes a scheme for identifying versions of Python software distributions, and declaring dependencies on particular versions.</dd>
+<dt>PEP621</dt>
+<dd>This PEP specifies how to write a project's core metadata in a pyproject.toml file for packaging-related tools to consume.</dd>
+<dt>PEP517</dt>
+<dd>This PEP formalizes a build-system independent format for source trees. Tightly linked to PEP518.</dd>
+<dt>PEP518</dt>
+<dd>This PEP specifies how Python software packages should specify what build dependencies they have in order to execute their chosen build system. See PEP517 too.</dd>
+</dl>
+<h3 id="installer-provision">Installer Provision</h3>
+<dl>
+<dt>ensurepip</dt>
+<dd>The ensurepip standard library package provides support for bootstrapping the pip installer into an existing Python installation or virtual environment.</dd>
+<dt>ensureconda</dt>
+<dd>Ensureconda is a CLI tool that will find a preexisting conda/mamba executable, install one if none was found, and return the path of the found/installed location.</dd>
+<dt>condacolab</dt>
+<dd>A Python package to install Conda (and friends) on live Google Colab instances.</dd>
+<dt>setup-miniconda</dt>
+<dd>An action to enable the preinstalled Miniconda or download and install Miniconda/Miniforge/Mambaforge on Github Actions workflows.</dd>
+<dt>provision-with-micromamba</dt>
+<dd>A GitHub Actions action to create conda environments with micromamba.</dd>
+</dl>
+<h3 id="python-distributions">Python Distributions</h3>
+<dl>
+<dt>Miniconda</dt>
+<dd>A Python installation plus the conda package manager, packaged by Anaconda Inc.</dd>
+<dt>Miniforge</dt>
+<dd>Same as Miniconda, but preconfigured for conda-forge.</dd>
+<dt>Mambaforge</dt>
+<dd>Same as Miniforge, but including the Mamba package manager.</dd>
+</dl>
+<h3 id="organizations">Organizations</h3>
+<dl>
+<dt>Anaconda</dt>
+<dd>The company behind conda, the package manager. Formerly Continuum Analytics. This is also a common way to refer to the Anaconda Individual Edition, a Python distribution that contains hundreds of ready to use data science packages plus the conda package manager.</dd>
+<dt>conda-forge</dt>
+<dd>A community-led collection of recipes, build infrastructure and distributions for the conda package manager.</dd>
+<dt>bioconda</dt>
+<dd>Bioconda is a channel for the conda package manager specializing in bioinformatics software.</dd>
+<dt>QuantStack</dt>
+<dd>QuantStack is the company in charge of developing Mamba, Micromamba, Boa and Quetz.</dd>
+<dt>conda-incubator</dt>
+<dd>A Github organization that hosts community-developed tools in the conda ecosystem.</dd>
+<dt>conda-tools</dt>
+<dd>Another Github organization that hosts community-developed tools in the conda ecosystem, tightly linked to conda-forge.</dd>
+<dt>mamba-org</dt>
+<dd>The GitHub organization that hosts QuantStack's open-source conda reimplementations Mamba, Boa and Quetz.</dd>
+<dt>PyPA</dt>
+<dd>The Python Packaging Authority, which governs PyPA, pip and other Python-first packaging tooling and services.</dd>
+<dt>PSF</dt>
+<dd>The Python Software Foundation.</dd>
+</dl>
+<h3 id="concepts">Concepts</h3>
+<dl>
+<dt>defaults</dt>
+<dd>The set of channels preconfigured in the Anaconda / Miniconda distributions. In short, packages built and distributed by Anaconda Inc.</dd>
+<dt>metapackage</dt>
+<dd>A package that does not distribute files. It only specifies dependencies on other actual packages.</dd>
+<dt>virtual-package</dt>
+<dd>In conda speech, a metadata-only package exposed by the conda tooling to express hardware features as package constraints (e.g. supported CUDA versions). They always start with a double underscore.</dd>
+<dt>virtual-environment</dt>
+<dd>An isolated Python installation that can coexist along other installations. They are usually activated on-demand whenever they are needed.</dd>
+</dl>
+<h3 id="package-repositories">Package Repositories</h3>
+<dl>
+<dt>anaconda.org</dt>
+<dd>The authoritary source for conda packages. It consists of several channels, including defaults, conda-forge, bioconda and thousands more.</dd>
+<dt>PyPI</dt>
+<dd>The Python Package Index. The main source for wheels and sdists. This is where pip usually downloads files from.</dd>
+</dl>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.2b46852b.min.js"></script>
+      
+    
+  </body>
+</html>
