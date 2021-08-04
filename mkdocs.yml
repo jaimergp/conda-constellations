@@ -1,0 +1,12 @@
+site_name: Conda glossary
+theme:
+  name: material
+  palette:
+    primary: green
+    accent: orange
+  icon:
+    logo: octicons/north-star-24
+
+markdown_extensions:
+  - def_list
+  - pymdownx.snippets
