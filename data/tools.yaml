@@ -862,4 +862,34 @@ categories:
   - provision
   - conda
 ---
+name: gator
+organization: QuantStack
+description: |
+  The Mamba Navigator, a Web UI for managing conda environments. Provides Conda/Mamba environment
+  and package management as a standalone application or as extension for JupyterLab.
+url: https://github.com/mamba-org/gator
+docs: https://github.com/mamba-org/gator
+audience:
+  - users
+categories:
+  - package-install
+  - virtual-environment
+  - gui
+  - conda
+---
+name: vscode-micromamba
+organization: QuantStack
+description: |
+  Provides a convenient way to install developer tools in VSCode workspaces from conda-forge
+  with micromamba. Get NodeJS, Go, Rust, Python or JupyterLab installed by running a single command.
+url: https://github.com/mamba-org/vscode-micromamba
+docs: https://github.com/mamba-org/gator
+audience:
+  - users
+categories:
+  - package-install
+  - virtual-environment
+  - dev-workflow
+  - conda
+---
 
