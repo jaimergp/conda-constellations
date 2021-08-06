@@ -1,0 +1,57 @@
+---
+name: CFEP
+description: |
+  Conda Forge Enhancement Proposal. A document that formalizes a request for comments or changes
+  in the conda-forge community.
+url: https://conda-forge.org/docs/orga/cfep-index.html
+categories:
+  - conda
+---
+name: CEP
+description: |
+  Conda Enhancement Proposal. A document that formalizes a request for comments or changes in the
+  conda tooling managed by Anaconda.
+url: https://github.com/conda/ceps
+categories:
+  - conda
+---
+name: PEP
+description: |
+  Python Enhancement Proposal. A document that formalizes a request for comments or changes in the
+  Python language and its governance.
+url: https://www.python.org/dev/peps/
+categories:
+  - python
+---
+name: PEP440
+description: |
+  This PEP describes a scheme for identifying versions of Python software distributions, and
+  declaring dependencies on particular versions.
+url: https://www.python.org/dev/peps/pep-0440/
+categories:
+  - general
+---
+name: PEP621
+description: |
+  This PEP specifies how to write a project's core metadata in a pyproject.toml file for
+  packaging-related tools to consume.
+url: https://www.python.org/dev/peps/pep-0621/
+categories:
+  - wheels
+---
+name: PEP517
+description: |
+  This PEP formalizes a build-system independent format for source trees. Tightly linked to PEP518.
+url: https://www.python.org/dev/peps/pep-0517/
+categories:
+  - wheels
+---
+name: PEP518
+description: |
+  This PEP specifies how Python software packages should specify what build dependencies they have
+  in order to execute their chosen build system. See PEP517 too.
+url: https://www.python.org/dev/peps/pep-0518/
+categories:
+  - wheels
+---
+

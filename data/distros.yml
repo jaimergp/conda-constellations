@@ -1,0 +1,35 @@
+---
+name: Anaconda Individual Edition
+organization: Anaconda
+description: |
+  A Python installation plus the conda package manager and hundreds of data science packages.
+url: https://www.anaconda.com/products/individual
+categories:
+  - conda
+---
+name: Miniconda
+organization: Anaconda
+description: |
+  A Python installation plus the conda package manager, packaged by Anaconda Inc.
+url: https://docs.conda.io/en/latest/miniconda.html
+categories:
+  - conda
+---
+name: Miniforge
+organization: conda-forge
+description: |
+  Same as Miniconda, but preconfigured for conda-forge.
+url: https://github.com/conda-forge/miniforge
+categories:
+  - conda
+---
+name: Mambaforge
+organization: conda-forge
+description: |
+  Same as Miniforge, but including the Mamba package manager.
+url: https://github.com/conda-forge/miniforge
+categories:
+  - conda
+  - mamba
+---
+
