@@ -1,7 +1,7 @@
-baseURL = 'https://jaimergp.github.io/conda-glossary/'
+baseURL = 'https://jaimergp.github.io/scientific-packaging-glossary/'
 languageCode = 'en-us'
-title = 'Scientific packaging glossary'
+title = 'Scientific Packaging Glossary'
 # Theme to use
 theme = "hugo-bootstrap-5"
 
-copyright = 'Made with 💜 at <a href="https://labs.quansight.org/" target="_blank">Quansight Labs</a> by <a href="https://github.com/jaimergp/conda-glossary" target="_blank">@jaimergp</a> | Theme by <a href="https://github.com/NotWoods/hugo-bootstrap-5" target="_blank">Tiger Oakes</a>'
+copyright = 'Made with 💜 at <a href="https://labs.quansight.org/" target="_blank">Quansight Labs</a> by <a href="https://github.com/jaimergp/scientific-packaging-glossary" target="_blank">@jaimergp</a> | Theme by <a href="https://github.com/NotWoods/hugo-bootstrap-5" target="_blank">Tiger Oakes</a>'
