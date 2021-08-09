@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to the Scientific Packaging Glossary on Scientific packaging glossary</title>
-    <link>https://jaimergp.github.io/conda-glossary/</link>
-    <description>Recent content in Welcome to the Scientific Packaging Glossary on Scientific packaging glossary</description>
+    <title>Welcome to the Scientific Packaging Glossary on Scientific Packaging Glossary</title>
+    <link>https://jaimergp.github.io/scientific-packaging-glossary/</link>
+    <description>Recent content in Welcome to the Scientific Packaging Glossary on Scientific Packaging Glossary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Made with 💜 at &lt;a href=&#34;https://labs.quansight.org/&#34; target=&#34;_blank&#34;&gt;Quansight Labs&lt;/a&gt; by &lt;a href=&#34;https://github.com/jaimergp/conda-glossary&#34; target=&#34;_blank&#34;&gt;@jaimergp&lt;/a&gt; | Theme by &lt;a href=&#34;https://github.com/NotWoods/hugo-bootstrap-5&#34; target=&#34;_blank&#34;&gt;Tiger Oakes&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 09 Aug 2021 10:04:44 +0200</lastBuildDate><atom:link href="https://jaimergp.github.io/conda-glossary/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Made with 💜 at &lt;a href=&#34;https://labs.quansight.org/&#34; target=&#34;_blank&#34;&gt;Quansight Labs&lt;/a&gt; by &lt;a href=&#34;https://github.com/jaimergp/scientific-packaging-glossary&#34; target=&#34;_blank&#34;&gt;@jaimergp&lt;/a&gt; | Theme by &lt;a href=&#34;https://github.com/NotWoods/hugo-bootstrap-5&#34; target=&#34;_blank&#34;&gt;Tiger Oakes&lt;/a&gt;</copyright>
+    <lastBuildDate>Mon, 09 Aug 2021 10:04:44 +0200</lastBuildDate><atom:link href="https://jaimergp.github.io/scientific-packaging-glossary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concepts</title>
-      <link>https://jaimergp.github.io/conda-glossary/concepts/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/concepts/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/concepts/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/concepts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distributions</title>
-      <link>https://jaimergp.github.io/conda-glossary/distros/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/distros/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/distros/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/distros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>File formats</title>
-      <link>https://jaimergp.github.io/conda-glossary/files/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/files/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/files/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/files/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Organizations</title>
-      <link>https://jaimergp.github.io/conda-glossary/orgs/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/orgs/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/orgs/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/orgs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Specifications</title>
-      <link>https://jaimergp.github.io/conda-glossary/specs/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/specs/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/specs/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/specs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Packaging tools</title>
-      <link>https://jaimergp.github.io/conda-glossary/tools/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/tools/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:27 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/tools/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/tools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://jaimergp.github.io/conda-glossary/about/</link>
+      <link>https://jaimergp.github.io/scientific-packaging-glossary/about/</link>
       <pubDate>Mon, 09 Aug 2021 10:02:32 +0200</pubDate>
       
-      <guid>https://jaimergp.github.io/conda-glossary/about/</guid>
+      <guid>https://jaimergp.github.io/scientific-packaging-glossary/about/</guid>
       <description>Hello!</description>
     </item>
     

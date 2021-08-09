@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Scientific packaging glossary</title>
-    <link>https://jaimergp.github.io/conda-glossary/tags/</link>
-    <description>Recent content in Tags on Scientific packaging glossary</description>
+    <title>Tags on Scientific Packaging Glossary</title>
+    <link>https://jaimergp.github.io/scientific-packaging-glossary/tags/</link>
+    <description>Recent content in Tags on Scientific Packaging Glossary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Made with 💜 at &lt;a href=&#34;https://labs.quansight.org/&#34; target=&#34;_blank&#34;&gt;Quansight Labs&lt;/a&gt; by &lt;a href=&#34;https://github.com/jaimergp/conda-glossary&#34; target=&#34;_blank&#34;&gt;@jaimergp&lt;/a&gt; | Theme by &lt;a href=&#34;https://github.com/NotWoods/hugo-bootstrap-5&#34; target=&#34;_blank&#34;&gt;Tiger Oakes&lt;/a&gt;</copyright><atom:link href="https://jaimergp.github.io/conda-glossary/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Made with 💜 at &lt;a href=&#34;https://labs.quansight.org/&#34; target=&#34;_blank&#34;&gt;Quansight Labs&lt;/a&gt; by &lt;a href=&#34;https://github.com/jaimergp/scientific-packaging-glossary&#34; target=&#34;_blank&#34;&gt;@jaimergp&lt;/a&gt; | Theme by &lt;a href=&#34;https://github.com/NotWoods/hugo-bootstrap-5&#34; target=&#34;_blank&#34;&gt;Tiger Oakes&lt;/a&gt;</copyright><atom:link href="https://jaimergp.github.io/scientific-packaging-glossary/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
