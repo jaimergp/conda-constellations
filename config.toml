@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://jaimergp.github.io/conda-glossary/'
 languageCode = 'en-us'
 title = 'Scientific packaging glossary'
 # Theme to use
