@@ -11,3 +11,7 @@ Our content is organized in the following sections:
 * [Organizations]({{< relref "content/orgs.md" >}})
 * [Specifications]({{< relref "content/specs.md" >}})
 * [Tools]({{< relref "content/tools.md" >}})
+
+
+If you would like to add a new entry or change an existing
+one, feel free to raise an issue or open a PR in our [GitHub repo](https://github.com/jaimergp/conda-glossary)!
