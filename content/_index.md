@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Scientific Package Glossary"
+title: "Welcome to the Scientific Packaging Glossary"
 date: 2021-08-09T10:04:44+02:00
 ---
 
@@ -14,4 +14,4 @@ Our content is organized in the following sections:
 
 
 If you would like to add a new entry or change an existing
-one, feel free to raise an issue or open a PR in our [GitHub repo](https://github.com/jaimergp/conda-glossary)!
+one, feel free to raise an issue or open a PR in our [GitHub repo](https://github.com/jaimergp/scientific-packaging-glossary)!
