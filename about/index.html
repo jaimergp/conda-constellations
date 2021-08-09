@@ -84,22 +84,32 @@
 
 
 
-<form onkeydown="return event.key != 'Enter';">
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="labelFilter">
-        <label for="labelFilter">Filter by labels</label>
-    </div>
-</form>
+
+
+<p>Filter by tags: </p>
+
 
 
 
 <script>
-$('#labelFilter').keyup(function (){
-    $('.card').removeClass('d-none');
-    var filter = $(this).val().toLowerCase(); 
-    if(filter) {
-        $('.all-cards').find('.card .card-footer:not(:contains("'+filter+'"))').parent().addClass('d-none');
-    }
+$("button[data-operation=filter]").click(function (){
+    
+    $('.card').parent().parent().removeClass("d-none");
+    
+    $(this).toggleClass("active");
+    
+    let activeFilters = $("button.active[data-operation=filter]").map(function() {return $(this).data("tag-value")}).get();
+    
+    if(!activeFilters.length) return;
+    
+    $(".card").each(function(){
+        
+        let badges = $(this).find("span.badge").map(function(){ return $(this).data("tag-value")}).get();
+        
+        if(!activeFilters.every(function(val) { return badges.indexOf(val) >= 0; })){
+            $(this).parent().parent().addClass("d-none");
+        }
+    })
 })
 </script>
 </article>

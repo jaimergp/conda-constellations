@@ -5,7 +5,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Specs" />
+<meta property="og:title" content="Specifications" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jaimergp.github.io/conda-glossary/specs/" /><meta property="article:section" content="" />
@@ -14,7 +14,7 @@
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Specs"/>
+<meta name="twitter:title" content="Specifications"/>
 <meta name="twitter:description" content=""/>
 
 
@@ -23,7 +23,7 @@
 
     <title>
       
-        Specs | Scientific packaging glossary
+        Specifications | Scientific packaging glossary
       
     </title>
 
@@ -71,7 +71,7 @@
 
 <header>
     <h2 class="blog-post-title">
-    <a class="text-dark text-decoration-none" href="/conda-glossary/specs/">Specs</a>
+    <a class="text-dark text-decoration-none" href="/conda-glossary/specs/">Specifications</a>
 </h2>
 
     <hr>
@@ -83,168 +83,259 @@
 
 
 
-<form onkeydown="return event.key != 'Enter';">
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="labelFilter">
-        <label for="labelFilter">Filter by labels</label>
-    </div>
-</form>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
-<div class="row my-1 all-cards">
+<p>Filter by tags: </p>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="conda" data-operation="filter">
+        conda
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="general" data-operation="filter">
+        general
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="python" data-operation="filter">
+        python
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="wheels" data-operation="filter">
+        wheels
+    </button>
+
+
+
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://conda-forge.org/docs/orga/cfep-index.html" target="_blank" title="Go to CFEP's website (new page)">CFEP</a></h5>
+        <h5 class="card-title" id="cfep">
+            
+                <a href="https://conda-forge.org/docs/orga/cfep-index.html" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>CFEP</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Conda Forge Enhancement Proposal. A document that formalizes a request for comments or changes
 in the conda-forge community.</p>
-        <a href="https://conda-forge.org/docs/orga/cfep-index.html" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://conda-forge.org/docs/orga/cfep-index.html" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://github.com/conda/ceps" target="_blank" title="Go to CEP's website (new page)">CEP</a></h5>
+        <h5 class="card-title" id="cep">
+            
+                <a href="https://github.com/conda/ceps" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>CEP</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Conda Enhancement Proposal. A document that formalizes a request for comments or changes in the
 conda tooling managed by Anaconda.</p>
-        <a href="https://github.com/conda/ceps" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://github.com/conda/ceps" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://www.python.org/dev/peps/" target="_blank" title="Go to PEP's website (new page)">PEP</a></h5>
+        <h5 class="card-title" id="pep">
+            
+                <a href="https://www.python.org/dev/peps/" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>PEP</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Python Enhancement Proposal. A document that formalizes a request for comments or changes in the
 Python language and its governance.</p>
-        <a href="https://www.python.org/dev/peps/" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://www.python.org/dev/peps/" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">python</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="python">python</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://www.python.org/dev/peps/pep-0440/" target="_blank" title="Go to PEP440's website (new page)">PEP440</a></h5>
+        <h5 class="card-title" id="pep440">
+            
+                <a href="https://www.python.org/dev/peps/pep-0440/" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>PEP440</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">This PEP describes a scheme for identifying versions of Python software distributions, and
 declaring dependencies on particular versions.</p>
-        <a href="https://www.python.org/dev/peps/pep-0440/" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://www.python.org/dev/peps/pep-0440/" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">general</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="general">general</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://www.python.org/dev/peps/pep-0621/" target="_blank" title="Go to PEP621's website (new page)">PEP621</a></h5>
+        <h5 class="card-title" id="pep621">
+            
+                <a href="https://www.python.org/dev/peps/pep-0621/" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>PEP621</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">This PEP specifies how to write a project&rsquo;s core metadata in a pyproject.toml file for
 packaging-related tools to consume.</p>
-        <a href="https://www.python.org/dev/peps/pep-0621/" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://www.python.org/dev/peps/pep-0621/" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://www.python.org/dev/peps/pep-0517/" target="_blank" title="Go to PEP517's website (new page)">PEP517</a></h5>
+        <h5 class="card-title" id="pep517">
+            
+                <a href="https://www.python.org/dev/peps/pep-0517/" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>PEP517</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">This PEP formalizes a build-system independent format for source trees. Tightly linked to PEP518.</p>
-        <a href="https://www.python.org/dev/peps/pep-0517/" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://www.python.org/dev/peps/pep-0517/" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://www.python.org/dev/peps/pep-0518/" target="_blank" title="Go to PEP518's website (new page)">PEP518</a></h5>
+        <h5 class="card-title" id="pep518">
+            
+                <a href="https://www.python.org/dev/peps/pep-0518/" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>PEP518</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">This PEP specifies how Python software packages should specify what build dependencies they have
 in order to execute their chosen build system. See PEP517 too.</p>
-        <a href="https://www.python.org/dev/peps/pep-0518/" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://www.python.org/dev/peps/pep-0518/" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
@@ -253,12 +344,24 @@ in order to execute their chosen build system. See PEP517 too.</p>
 
 
 <script>
-$('#labelFilter').keyup(function (){
-    $('.card').removeClass('d-none');
-    var filter = $(this).val().toLowerCase(); 
-    if(filter) {
-        $('.all-cards').find('.card .card-footer:not(:contains("'+filter+'"))').parent().addClass('d-none');
-    }
+$("button[data-operation=filter]").click(function (){
+    
+    $('.card').parent().parent().removeClass("d-none");
+    
+    $(this).toggleClass("active");
+    
+    let activeFilters = $("button.active[data-operation=filter]").map(function() {return $(this).data("tag-value")}).get();
+    
+    if(!activeFilters.length) return;
+    
+    $(".card").each(function(){
+        
+        let badges = $(this).find("span.badge").map(function(){ return $(this).data("tag-value")}).get();
+        
+        if(!activeFilters.every(function(val) { return badges.indexOf(val) >= 0; })){
+            $(this).parent().parent().addClass("d-none");
+        }
+    })
 })
 </script>
 </article>

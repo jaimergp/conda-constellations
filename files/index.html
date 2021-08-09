@@ -5,7 +5,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="Files" />
+<meta property="og:title" content="File formats" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jaimergp.github.io/conda-glossary/files/" /><meta property="article:section" content="" />
@@ -14,7 +14,7 @@
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Files"/>
+<meta name="twitter:title" content="File formats"/>
 <meta name="twitter:description" content=""/>
 
 
@@ -23,7 +23,7 @@
 
     <title>
       
-        Files | Scientific packaging glossary
+        File formats | Scientific packaging glossary
       
     </title>
 
@@ -71,7 +71,7 @@
 
 <header>
     <h2 class="blog-post-title">
-    <a class="text-dark text-decoration-none" href="/conda-glossary/files/">Files</a>
+    <a class="text-dark text-decoration-none" href="/conda-glossary/files/">File formats</a>
 </h2>
 
     <hr>
@@ -83,535 +83,713 @@
 
 
 
-<form onkeydown="return event.key != 'Enter';">
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="labelFilter">
-        <label for="labelFilter">Filter by labels</label>
-    </div>
-</form>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
-<div class="row my-1 all-cards">
+<p>Filter by tags: </p>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="build-instructions" data-operation="filter">
+        build-instructions
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="conda" data-operation="filter">
+        conda
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="for-packagers" data-operation="filter">
+        for-packagers
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="for-users" data-operation="filter">
+        for-users
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="install-instructions" data-operation="filter">
+        install-instructions
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="package-format" data-operation="filter">
+        package-format
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="package-index" data-operation="filter">
+        package-index
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="wheels" data-operation="filter">
+        wheels
+    </button>
+
+
+
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="#ZgotmplZ" target="_blank" title="Go to meta.yaml's website (new page)">meta.yaml</a></h5>
+        <h5 class="card-title" id="meta.yaml">
+            
+                <a href="#ZgotmplZ" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>meta.yaml</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">All the metadata in the conda-build recipe is specified in the meta.yaml file. It contains info
 such as the package name, version, source URL, build dependencies, runtime requirements, tests
 and licensing. It supports Jinja and platform selectors.</p>
-        <a href="#ZgotmplZ" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="#ZgotmplZ" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">build-instructions</span>
+            <span class="badge rounded-pill bg-danger" data-tag-value="for-packagers">for-packagers</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="build-instructions">build-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html" target="_blank" title="Go to conda_build_config.yaml's website (new page)">conda_build_config.yaml</a></h5>
+        <h5 class="card-title" id="conda_build_config.yaml">
+            
+                <a href="https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>conda_build_config.yaml</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Conda build can produce variants of the same package (e.g. different Python versions). This file
 controls the variables injected to meta.yaml. This is the main mechanism behind
 &lsquo;conda-forge-pinning&rsquo;.</p>
-        <a href="https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.conda.io/projects/conda-build/en/latest/resources/variants.html" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">build-instructions</span>
+            <span class="badge rounded-pill bg-danger" data-tag-value="for-packagers">for-packagers</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="build-instructions">build-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.python.org/3/distutils/setupscript.html" target="_blank" title="Go to setup.py's website (new page)">setup.py</a></h5>
+        <h5 class="card-title" id="setup.py">
+            
+                <a href="https://docs.python.org/3/distutils/setupscript.html" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>setup.py</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Distutils/setuptools script that provides a function to install a Python package with or without
 compiled extensions.</p>
-        <a href="https://docs.python.org/3/distutils/setupscript.html" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.python.org/3/distutils/setupscript.html" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">build-instructions</span>
+            <span class="badge rounded-pill bg-danger" data-tag-value="for-packagers">for-packagers</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="build-instructions">build-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://setuptools.readthedocs.io/en/latest/userguide/declarative_config.html" target="_blank" title="Go to setup.cfg's website (new page)">setup.cfg</a></h5>
+        <h5 class="card-title" id="setup.cfg">
+            
+                <a href="https://setuptools.readthedocs.io/en/latest/userguide/declarative_config.html" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>setup.cfg</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Accompanying metadata file for setup.py that defines some configuration parameters.</p>
-        <a href="https://setuptools.readthedocs.io/en/latest/userguide/declarative_config.html" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://setuptools.readthedocs.io/en/latest/userguide/declarative_config.html" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">build-instructions</span>
+            <span class="badge rounded-pill bg-danger" data-tag-value="for-packagers">for-packagers</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="build-instructions">build-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="#ZgotmplZ" target="_blank" title="Go to pyproject.toml's website (new page)">pyproject.toml</a></h5>
+        <h5 class="card-title" id="pyproject.toml">
+            
+                <a href="#ZgotmplZ" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>pyproject.toml</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Static file that provides all the information necessary to create an installable Python package.
 This alleviates the main problem of setup.py: its contents are dynamic and need to be executed to
 get retrieved.</p>
-        <a href="#ZgotmplZ" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="#ZgotmplZ" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">build-instructions</span>
+            <span class="badge rounded-pill bg-danger" data-tag-value="for-packagers">for-packagers</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="build-instructions">build-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually" target="_blank" title="Go to environment.yaml's website (new page)">environment.yaml</a></h5>
+        <h5 class="card-title" id="environment.yaml">
+            
+                <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>environment.yaml</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">A file specifying conda packages and what channels to get them from. Users can also add pip
 packages here. It can be ingested by conda/mamba env and micromamba create. The tool will solve
 the environment and install the required packages.</p>
-        <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">install-instructions</span>
+            <span class="badge rounded-pill bg-primary" data-tag-value="for-users">for-users</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="install-instructions">install-instructions</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments" target="_blank" title="Go to conda.lock's website (new page)">conda.lock</a></h5>
+        <h5 class="card-title" id="conda.lock">
+            
+                <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>conda.lock</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Contains the definitions of an already solved conda environment. It can be generated by
 conda-lock, and consumed by conda install -f.</p>
-        <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#building-identical-conda-environments" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">install-instructions</span>
+            <span class="badge rounded-pill bg-primary" data-tag-value="for-users">for-users</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="install-instructions">install-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://python-poetry.org/docs/basic-usage/#installing-with-poetrylock" target="_blank" title="Go to poetry.lock's website (new page)">poetry.lock</a></h5>
+        <h5 class="card-title" id="poetry.lock">
+            
+                <a href="https://python-poetry.org/docs/basic-usage/#installing-with-poetrylock" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>poetry.lock</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Similar to conda-lock, Poetry can freeze an existing virtual environment, writing the exact
 package definitions to this file.</p>
-        <a href="https://python-poetry.org/docs/basic-usage/#installing-with-poetrylock" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://python-poetry.org/docs/basic-usage/#installing-with-poetrylock" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">install-instructions</span>
+            <span class="badge rounded-pill bg-primary" data-tag-value="for-users">for-users</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="install-instructions">install-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" target="_blank" title="Go to Pipfile's website (new page)">Pipfile</a></h5>
+        <h5 class="card-title" id="pipfile">
+            
+                <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>Pipfile</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">A better way of specifying requirements for a project. Instead of keeping several <code>requirements.txt</code>
 files around, you can specify different categories in the same file.</p>
-        <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">install-instructions</span>
+            <span class="badge rounded-pill bg-primary" data-tag-value="for-users">for-users</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="install-instructions">install-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" target="_blank" title="Go to Pipfile.lock's website (new page)">Pipfile.lock</a></h5>
+        <h5 class="card-title" id="pipfile.lock">
+            
+                <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>Pipfile.lock</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">When Pipenv solves a Pipfile (finds the dependencies of the specified requirements in Pipfile),
 the resulting list is &ldquo;frozen&rdquo; to this lock file, including exact versions and hashes.</p>
-        <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">install-instructions</span>
+            <span class="badge rounded-pill bg-primary" data-tag-value="for-users">for-users</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="install-instructions">install-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://pip.pypa.io/en/stable/cli/pip_install/#requirements-file-format" target="_blank" title="Go to requirements.txt's website (new page)">requirements.txt</a></h5>
+        <h5 class="card-title" id="requirements.txt">
+            
+                <a href="https://pip.pypa.io/en/stable/cli/pip_install/#requirements-file-format" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>requirements.txt</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">A file containing a list of packages (and some command line options) to be installed by pip.</p>
-        <a href="https://pip.pypa.io/en/stable/cli/pip_install/#requirements-file-format" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://pip.pypa.io/en/stable/cli/pip_install/#requirements-file-format" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">install-instructions</span>
+            <span class="badge rounded-pill bg-primary" data-tag-value="for-users">for-users</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="install-instructions">install-instructions</span>
+        
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#repodata-json" target="_blank" title="Go to repodata.json's website (new page)">repodata.json</a></h5>
+        <h5 class="card-title" id="repodata.json">
+            
+                <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#repodata-json%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>repodata.json</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Conda channels store package metadata for each architecture (linux-64, win-64, etc) in these
 JSON files. Each package reports here which package they depend on, among other things.</p>
-        <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#repodata-json" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#repodata-json%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-index</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-index">package-index</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#trimming-to-current-repodata" target="_blank" title="Go to current_repodata.json's website (new page)">current_repodata.json</a></h5>
+        <h5 class="card-title" id="current_repodata.json">
+            
+                <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#trimming-to-current-repodata%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>current_repodata.json</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Stripped down repodata.json which only contains the last build of each package, plus their
 dependencies, recursively. It simplifies the solver stage in some cases.</p>
-        <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#trimming-to-current-repodata" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#trimming-to-current-repodata%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-index</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-index">package-index</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json" target="_blank" title="Go to channeldata.json's website (new page)">channeldata.json</a></h5>
+        <h5 class="card-title" id="channeldata.json">
+            
+                <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>channeldata.json</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">A channel-wide metadata file that contains an index of all the conda packages present across all
 architectures in the channel.</p>
-        <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-index</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-index">package-index</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json" target="_blank" title="Go to .tar.bz2's website (new page)">.tar.bz2</a></h5>
+        <h5 class="card-title" id=".tar.bz2">
+            
+                <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>.tar.bz2</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Conda packages are distributed as bzip2-compressed tarballs, including the package files and some
 metadata.</p>
-        <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.conda.io/projects/conda-build/en/latest/concepts/generating-index.html#channeldata-json%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-format</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-format">package-format</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/packages.html#conda-file-format" target="_blank" title="Go to .conda's website (new page)">.conda</a></h5>
+        <h5 class="card-title" id=".conda">
+            
+                <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/packages.html#conda-file-format%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>.conda</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">The .conda file format was introduced in conda 4.7 as a more compact, and thus faster, alternative
 to a tarball. The .conda file format consists of an outer, uncompressed ZIP-format container, with
 2 inner compressed .tar files.</p>
-        <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/packages.html#conda-file-format" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/packages.html#conda-file-format%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-format</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-format">package-format</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://docs.python.org/3/distutils/sourcedist.html" target="_blank" title="Go to sdist's website (new page)">sdist</a></h5>
+        <h5 class="card-title" id="sdist">
+            
+                <a href="https://docs.python.org/3/distutils/sourcedist.html%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>sdist</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">A source code distribution available in PyPI, packaged as <code>.tar.gz</code>. Pip will prefer wheels by
 default.</p>
-        <a href="https://docs.python.org/3/distutils/sourcedist.html" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://docs.python.org/3/distutils/sourcedist.html%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-format</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-format">package-format</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="https://www.python.org/dev/peps/pep-0427/" target="_blank" title="Go to wheel's website (new page)">wheel</a></h5>
+        <h5 class="card-title" id="wheel">
+            
+                <a href="https://www.python.org/dev/peps/pep-0427/%20-%20users%20-%20for-packagers" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            
+            <span>wheel</span></a>
+            
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">Platform-specific build of a PyPI package that can contain compiled libraries. Pip will prefer
 this even if a sdist is present. Extension is <code>.whl</code>.</p>
-        <a href="https://www.python.org/dev/peps/pep-0427/" class="card-link" target="_blank"></i>Project</a>
+        
+            <a href="https://www.python.org/dev/peps/pep-0427/%20-%20users%20-%20for-packagers" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        
         
     </div>
     
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For packagers, users</li>
-    </ul>
-    
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">package-format</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="package-format">package-format</span>
         
-            <span class="badge rounded-pill bg-secondary">wheels</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="wheels">wheels</span>
         
     </div>
 </div>
@@ -620,12 +798,24 @@ this even if a sdist is present. Extension is <code>.whl</code>.</p>
 
 
 <script>
-$('#labelFilter').keyup(function (){
-    $('.card').removeClass('d-none');
-    var filter = $(this).val().toLowerCase(); 
-    if(filter) {
-        $('.all-cards').find('.card .card-footer:not(:contains("'+filter+'"))').parent().addClass('d-none');
-    }
+$("button[data-operation=filter]").click(function (){
+    
+    $('.card').parent().parent().removeClass("d-none");
+    
+    $(this).toggleClass("active");
+    
+    let activeFilters = $("button.active[data-operation=filter]").map(function() {return $(this).data("tag-value")}).get();
+    
+    if(!activeFilters.length) return;
+    
+    $(".card").each(function(){
+        
+        let badges = $(this).find("span.badge").map(function(){ return $(this).data("tag-value")}).get();
+        
+        if(!activeFilters.every(function(val) { return badges.indexOf(val) >= 0; })){
+            $(this).parent().parent().addClass("d-none");
+        }
+    })
 })
 </script>
 </article>

@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>Distros</title>
+      <title>Distributions</title>
       <link>https://jaimergp.github.io/conda-glossary/distros/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>Files</title>
+      <title>File formats</title>
       <link>https://jaimergp.github.io/conda-glossary/files/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>Orgs</title>
+      <title>Organizations</title>
       <link>https://jaimergp.github.io/conda-glossary/orgs/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>Specs</title>
+      <title>Specifications</title>
       <link>https://jaimergp.github.io/conda-glossary/specs/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>Tools</title>
+      <title>Packaging tools</title>
       <link>https://jaimergp.github.io/conda-glossary/tools/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:27 +0200</pubDate>
       

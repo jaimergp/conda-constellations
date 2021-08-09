@@ -83,147 +83,189 @@
 
 
 
-<form onkeydown="return event.key != 'Enter';">
-    <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="labelFilter">
-        <label for="labelFilter">Filter by labels</label>
-    </div>
-</form>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
-<div class="row my-1 all-cards">
+<p>Filter by tags: </p>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="conda" data-operation="filter">
+        conda
+    </button>
+
+    <button class="btn btn-primary btn-sm my-1" data-toggle="button" aria-pressed="false" autocomplete="off" data-tag-value="python" data-operation="filter">
+        python
+    </button>
+
+
+
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="" target="_blank" title="Go to defaults's website (new page)">defaults</a></h5>
+        <h5 class="card-title" id="defaults">
+            
+            <span>defaults</span>
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">The set of channels preconfigured in the Anaconda / Miniconda distributions. In short, packages
 built and distributed by Anaconda Inc.</p>
-        <a href="" class="card-link" target="_blank"></i>Project</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="" target="_blank" title="Go to metapackage's website (new page)">metapackage</a></h5>
+        <h5 class="card-title" id="metapackage">
+            
+            <span>metapackage</span>
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">A package that does not distribute files. It only specifies dependencies on other actual packages.</p>
-        <a href="" class="card-link" target="_blank"></i>Project</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="" target="_blank" title="Go to virtual-package's website (new page)">virtual-package</a></h5>
+        <h5 class="card-title" id="virtual-package">
+            
+            <span>virtual-package</span>
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">In conda speech, a metadata-only package exposed by the conda tooling to express hardware features
 as package constraints (e.g. supported CUDA versions). They always start with a double underscore.</p>
-        <a href="" class="card-link" target="_blank"></i>Project</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="" target="_blank" title="Go to virtual-environment's website (new page)">virtual-environment</a></h5>
+        <h5 class="card-title" id="virtual-environment">
+            
+            <span>virtual-environment</span>
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">An isolated Python installation that can coexist along other installations. They are usually
 activated on-demand whenever they are needed.</p>
-        <a href="" class="card-link" target="_blank"></i>Project</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
-            <span class="badge rounded-pill bg-secondary">python</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="python">python</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="" target="_blank" title="Go to anaconda.org's website (new page)">anaconda.org</a></h5>
+        <h5 class="card-title" id="anaconda.org">
+            
+            <span>anaconda.org</span>
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">The authoritary source for conda packages. It consists of several channels, including defaults,
 conda-forge, bioconda and thousands more.</p>
-        <a href="" class="card-link" target="_blank"></i>Project</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">conda</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="conda">conda</span>
         
     </div>
 </div>
     </div>
 </div>
 
-<div class="row my-1 all-cards">
+<div class="row my-4 all-cards">
     <div class="col-sm-12">
-        <div class="card" >
+        <div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="" target="_blank" title="Go to PyPI's website (new page)">PyPI</a></h5>
+        <h5 class="card-title" id="pypi">
+            
+            <span>PyPI</span>
+        </h5>
         
     </div>
     <div class="card-body">
         <p class="card-text">The Python Package Index. The main source for wheels and sdists. This is where pip usually
 downloads files from.</p>
-        <a href="" class="card-link" target="_blank"></i>Project</a>
+        
         
     </div>
     
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         
-            <span class="badge rounded-pill bg-secondary">python</span>
+            <span class="badge rounded-pill bg-secondary" data-tag-value="python">python</span>
         
     </div>
 </div>
@@ -232,12 +274,24 @@ downloads files from.</p>
 
 
 <script>
-$('#labelFilter').keyup(function (){
-    $('.card').removeClass('d-none');
-    var filter = $(this).val().toLowerCase(); 
-    if(filter) {
-        $('.all-cards').find('.card .card-footer:not(:contains("'+filter+'"))').parent().addClass('d-none');
-    }
+$("button[data-operation=filter]").click(function (){
+    
+    $('.card').parent().parent().removeClass("d-none");
+    
+    $(this).toggleClass("active");
+    
+    let activeFilters = $("button.active[data-operation=filter]").map(function() {return $(this).data("tag-value")}).get();
+    
+    if(!activeFilters.length) return;
+    
+    $(".card").each(function(){
+        
+        let badges = $(this).find("span.badge").map(function(){ return $(this).data("tag-value")}).get();
+        
+        if(!activeFilters.every(function(val) { return badges.indexOf(val) >= 0; })){
+            $(this).parent().parent().addClass("d-none");
+        }
+    })
 })
 </script>
 </article>
