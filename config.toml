@@ -3,3 +3,5 @@ languageCode = 'en-us'
 title = 'Scientific packaging glossary'
 # Theme to use
 theme = "hugo-bootstrap-5"
+
+copyright = 'Made with 💜 at <a href="https://labs.quansight.org/" target="_blank">Quansight Labs</a> by <a href="https://github.com/jaimergp/conda-glossary" target="_blank">@jaimergp</a> | Theme by <a href="https://github.com/NotWoods/hugo-bootstrap-5" target="_blank">Tiger Oakes</a>'
