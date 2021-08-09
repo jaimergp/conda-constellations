@@ -1,41 +1,41 @@
-name: defaults
-description: |
-  The set of channels preconfigured in the Anaconda / Miniconda distributions. In short, packages
-  built and distributed by Anaconda Inc.
-categories:
-  - conda
----
-name: metapackage
-description: |
-  A package that does not distribute files. It only specifies dependencies on other actual packages.
-categories:
-  - conda
----
-name: virtual-package
-description: |
-  In conda speech, a metadata-only package exposed by the conda tooling to express hardware features
-  as package constraints (e.g. supported CUDA versions). They always start with a double underscore.
-categories:
-  - conda
----
-name: virtual-environment
-description: |
-  An isolated Python installation that can coexist along other installations. They are usually
-  activated on-demand whenever they are needed.
-categories:
-  - conda
-  - python
----
-name: anaconda.org
-description: |
-  The authoritary source for conda packages. It consists of several channels, including defaults,
-  conda-forge, bioconda and thousands more.
-categories:
-  - conda
----
-name: PyPI
-description: |
-  The Python Package Index. The main source for wheels and sdists. This is where pip usually
-  downloads files from.
-categories:
-  - python
+- name: defaults
+  description: |
+    The set of channels preconfigured in the Anaconda / Miniconda distributions. In short, packages
+    built and distributed by Anaconda Inc.
+  categories:
+    - conda
+
+- name: metapackage
+  description: |
+    A package that does not distribute files. It only specifies dependencies on other actual packages.
+  categories:
+    - conda
+
+- name: virtual-package
+  description: |
+    In conda speech, a metadata-only package exposed by the conda tooling to express hardware features
+    as package constraints (e.g. supported CUDA versions). They always start with a double underscore.
+  categories:
+    - conda
+
+- name: virtual-environment
+  description: |
+    An isolated Python installation that can coexist along other installations. They are usually
+    activated on-demand whenever they are needed.
+  categories:
+    - conda
+    - python
+
+- name: anaconda.org
+  description: |
+    The authoritary source for conda packages. It consists of several channels, including defaults,
+    conda-forge, bioconda and thousands more.
+  categories:
+    - conda
+
+- name: PyPI
+  description: |
+    The Python Package Index. The main source for wheels and sdists. This is where pip usually
+    downloads files from.
+  categories:
+    - python

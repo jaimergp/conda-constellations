@@ -1,0 +1,28 @@
+{{ $data := .Site.Data }}
+
+{{ $items := index $data .File.TranslationBaseName }}
+
+<form onkeydown="return event.key != 'Enter';">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="labelFilter">
+        <label for="labelFilter">Filter by labels</label>
+    </div>
+</form>
+
+{{ range $item := $items }}
+<div class="row my-1 all-cards">
+    <div class="col-sm-12">
+        {{ partial "single-card" $item }}
+    </div>
+</div>
+{{ end }}
+
+<script>
+$('#labelFilter').keyup(function (){
+    $('.card').removeClass('d-none');
+    var filter = $(this).val().toLowerCase(); // get the value of the input, which we filter on
+    if(filter) {
+        $('.all-cards').find('.card .card-footer:not(:contains("'+filter+'"))').parent().addClass('d-none');
+    }
+})
+</script>

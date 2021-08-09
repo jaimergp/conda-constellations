@@ -1,0 +1,25 @@
+<div class="card" >
+    <div class="card-header">
+        <h5 class="card-title"><a href="{{ .url }}" target="_blank" title="Go to {{ .name }}'s website (new page)">{{ .name }}</a></h5>
+        {{ with .organization }}
+        <h6 class="card-subtitle text-muted">{{ . }}</h6>
+        {{ end }}
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{ .description | markdownify }}</p>
+        <a href="{{ .url }}" class="card-link" target="_blank"></i>Project</a>
+        {{ with .docs }}
+            <a href="{{ . }}" class="card-link" target="_blank">Documentation</a>
+        {{ end }}
+    </div>
+    {{ with .audience }}
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">For {{ delimit .  ", " }}</li>
+    </ul>
+    {{ end }}
+    <div class="card-footer bg-transparent">
+        {{ range .categories }}
+            <span class="badge rounded-pill bg-secondary">{{ . }}</span>
+        {{ end }}
+    </div>
+</div>

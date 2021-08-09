@@ -1,68 +1,67 @@
----
-name: Anaconda
-description: |
-  The company behind conda, the package manager. Formerly Continuum Analytics. This is also a
-  common way to refer to the Anaconda Individual Edition, the Python distribution.
-url: https://www.anaconda.com/
-categories:
-  - conda
----
-name: conda-forge
-description: |
-  A community-led collection of recipes, build infrastructure and distributions for the conda
-  package manager.
-url: https://conda-forge.org/
-categories:
-  - conda
----
-name: bioconda
-description: |
-  Bioconda is a channel for the conda package manager specializing in bioinformatics software.
-url: https://bioconda.github.io/
-categories:
-  - conda
----
-name: QuantStack
-description: |
-  QuantStack is the company in charge of developing Mamba, Micromamba, Boa and Quetz.
-url: https://quantstack.net/
-categories:
-  - conda
----
-name: conda-incubator
-description: |
-  A Github organization that hosts community-developed tools in the conda ecosystem.
-url: https://github.com/conda-incubator
-categories:
-  - conda
----
-name: conda-tools
-description: |
-  Another Github organization that hosts community-developed tools in the conda ecosystem, tightly
-  linked to conda-forge.
-url: https://github.com/conda-tools
-categories:
-  - conda
----
-name: mamba-org
-description: |
-  The GitHub organization that hosts QuantStack's open-source conda reimplementations Mamba, Boa and
-  Quetz.
-url: https://github.com/mamba-org
-categories:
-  - conda
----
-name: PyPA
-description: |
-  The Python Packaging Authority, which governs PyPA, pip and other Python-first packaging tooling
-  and services.
-url: https://github.com/pypa
-categories:
-  - python
----
-name: PSF
-description: |
-  The Python Software Foundation.
-url: https://github.com/psf
-categories:
-  - python
+- name: Anaconda
+  description: |
+    The company behind conda, the package manager. Formerly Continuum Analytics. This is also a
+    common way to refer to the Anaconda Individual Edition, the Python distribution.
+  url: https://www.anaconda.com/
+  categories:
+    - conda
+
+- name: conda-forge
+  description: |
+    A community-led collection of recipes, build infrastructure and distributions for the conda
+    package manager.
+  url: https://conda-forge.org/
+  categories:
+    - conda
+
+- name: bioconda
+  description: |
+    Bioconda is a channel for the conda package manager specializing in bioinformatics software.
+  url: https://bioconda.github.io/
+  categories:
+    - conda
+
+- name: QuantStack
+  description: |
+    QuantStack is the company in charge of developing Mamba, Micromamba, Boa and Quetz.
+  url: https://quantstack.net/
+  categories:
+    - conda
+
+- name: conda-incubator
+  description: |
+    A Github organization that hosts community-developed tools in the conda ecosystem.
+  url: https://github.com/conda-incubator
+  categories:
+    - conda
+
+- name: conda-tools
+  description: |
+    Another Github organization that hosts community-developed tools in the conda ecosystem, tightly
+    linked to conda-forge.
+  url: https://github.com/conda-tools
+  categories:
+    - conda
+
+- name: mamba-org
+  description: |
+    The GitHub organization that hosts QuantStack's open-source conda reimplementations Mamba, Boa and
+    Quetz.
+  url: https://github.com/mamba-org
+  categories:
+    - conda
+
+- name: PyPA
+  description: |
+    The Python Packaging Authority, which governs PyPA, pip and other Python-first packaging tooling
+    and services.
+  url: https://github.com/pypa
+  categories:
+    - python
+
+- name: PSF
+  description: |
+    The Python Software Foundation.
+  url: https://github.com/psf
+  categories:
+    - python
