@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome to the Scientific Package Glossary on Scientific packaging glossary</title>
-    <link>http://example.org/</link>
+    <link>https://jaimergp.github.io/conda-glossary/</link>
     <description>Recent content in Welcome to the Scientific Package Glossary on Scientific packaging glossary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Aug 2021 10:04:44 +0200</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Aug 2021 10:04:44 +0200</lastBuildDate><atom:link href="https://jaimergp.github.io/conda-glossary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concepts</title>
-      <link>http://example.org/concepts/</link>
+      <link>https://jaimergp.github.io/conda-glossary/concepts/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>http://example.org/concepts/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/concepts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Distros</title>
-      <link>http://example.org/distros/</link>
+      <link>https://jaimergp.github.io/conda-glossary/distros/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>http://example.org/distros/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/distros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Files</title>
-      <link>http://example.org/files/</link>
+      <link>https://jaimergp.github.io/conda-glossary/files/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>http://example.org/files/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/files/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Orgs</title>
-      <link>http://example.org/orgs/</link>
+      <link>https://jaimergp.github.io/conda-glossary/orgs/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>http://example.org/orgs/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/orgs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Specs</title>
-      <link>http://example.org/specs/</link>
+      <link>https://jaimergp.github.io/conda-glossary/specs/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:35 +0200</pubDate>
       
-      <guid>http://example.org/specs/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/specs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>http://example.org/tools/</link>
+      <link>https://jaimergp.github.io/conda-glossary/tools/</link>
       <pubDate>Mon, 09 Aug 2021 10:21:27 +0200</pubDate>
       
-      <guid>http://example.org/tools/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/tools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://example.org/about/</link>
+      <link>https://jaimergp.github.io/conda-glossary/about/</link>
       <pubDate>Mon, 09 Aug 2021 10:02:32 +0200</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>https://jaimergp.github.io/conda-glossary/about/</guid>
       <description>Hello!</description>
     </item>
     

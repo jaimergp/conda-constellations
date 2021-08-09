@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/concepts/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/concepts/</loc>
     <lastmod>2021-08-09T10:21:35+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/distros/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/distros/</loc>
     <lastmod>2021-08-09T10:21:35+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/files/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/files/</loc>
     <lastmod>2021-08-09T10:21:35+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/orgs/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/orgs/</loc>
     <lastmod>2021-08-09T10:21:35+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/specs/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/specs/</loc>
     <lastmod>2021-08-09T10:21:35+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/tools/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/tools/</loc>
     <lastmod>2021-08-09T10:21:27+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/</loc>
     <lastmod>2021-08-09T10:04:44+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/about/</loc>
     <lastmod>2021-08-09T10:02:32+02:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/categories/</loc>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://jaimergp.github.io/conda-glossary/tags/</loc>
   </url>
 </urlset>
