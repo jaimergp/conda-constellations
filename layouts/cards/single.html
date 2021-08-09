@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<header>
+    {{ partial "post-title" . }}
+    <hr>
+</header>
+<article class="blog-post">
+    {{ .Content }}
+
+    {{ partial "list-of-cards" . }}
+</article>
+
+{{ end }}

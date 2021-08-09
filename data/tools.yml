@@ -1,0 +1,899 @@
+#
+# name: str
+# organization: str
+# description: str
+# url: str
+# docs: str
+# image: str (path or url)
+# license: str
+# audience: one of users, packagers, infra
+# categories: list of str
+# # available categories: package-install, package-create, package-publish, virtual-environment,
+#                         dev-workflow, build-tools, package-bundler, package-audit, package-serve,
+#                         provision
+
+- name: conda
+  organization: Anaconda
+  description: |
+    A cross-platform, language-agnostic package manager created by Anaconda Inc.
+  url: https://github.com/conda/conda
+  docs: https://docs.conda.io/
+  audience:
+    - users
+  categories:
+    - package-install
+    - virtual-environment
+    - conda
+
+- name: mamba
+  organization: QuantStack
+  description: |
+    Mamba is a reimplementation of the conda package manager in C++.
+
+    - parallel downloading of repository data and package files using multi-threading
+    - libsolv for much faster dependency solving, a state of the art library used in the
+      RPM package manager of Red Hat, Fedora and OpenSUSE
+    - core parts of mamba are implemented in C++ for maximum efficiency
+
+    At the same time, mamba utilize the same command line parser, package installation
+    and deinstallation code and transaction verification routines as conda to stay as
+    compatible as possible.
+  url: https://github.com/mamba-org/mamba
+  docs: https://mamba.readthedocs.io/
+  audience:
+    - users
+  categories:
+    - package-install
+    - virtual-environment
+    - conda
+
+- name: micromamba
+  organization: mamba-org
+  description: |
+    micromamba is a tiny version of the mamba package manager. It is a pure C++ package
+    with a separate command line interface. It can be used to bootstrap environments
+    (as an alternative to miniconda), but it's currently experimental. The benefit is
+    that it's very tiny and does not come with a default version of Python.
+
+    micromamba works in the bash & zsh shell on Linux & OS X. It's completely statically linked,
+    which allows you to drop it in some place and just execute it.
+  url: https://github.com/mamba-org/mamba#micromamba
+  docs: https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html
+  audience:
+    - users
+  categories:
+    - package-install
+    - virtual-environment
+    - conda
+
+- name: pip
+  organization: PyPA
+  description: |
+    pip is the package installer for Python. You can use it to install packages from the
+    Python Package Index and other indexes.
+  url: https://github.com/pypa/pip
+  docs: https://pip.pypa.io/
+  audience:
+    - users
+  categories:
+    - package-install
+    - wheels
+
+- name: poetry
+  organization: Poetry
+  description: |
+    Poetry helps you declare, manage and install dependencies of Python projects, ensuring you have
+    the right stack everywhere.
+  url: https://github.com/python-poetry/poetry
+  docs: https://python-poetry.org/docs/
+  audience:
+    - users
+    - packagers
+  categories:
+    - package-install
+    - package-create
+    - package-publish
+    - virtual-environment
+    - wheels
+    - dev-workflow
+
+- name: flit
+  organization: Flit
+  description: |
+    Flit is a simple way to put Python packages and modules on PyPI. It tries to require less thought
+    about packaging and help you avoid common mistakes.
+  url: https://github.com/takluyver/flit
+  docs: https://flit.readthedocs.io/
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - package-publish
+    - wheels
+
+- name: conda-devenv
+  organization: ESSS
+  description: |
+    A conda tool to work with multiple projects in development mode.
+  url: https://github.com/ESSS/conda-devenv
+  docs: https://conda-devenv.readthedocs.io
+  audience:
+    - users
+  categories:
+    - dev-workflow
+    - conda
+
+- name: pipenv
+  organization: PyPA
+  description: |
+    Pipenv harnesses Pipfile, pip, and virtualenv into one single command.
+  url: https://github.com/pypa/pipenv
+  docs: https://pipenv.pypa.io
+  audience:
+    - users
+  categories:
+    - dev-workflow
+    - wheels
+
+- name: conda-build
+  organization: Anaconda
+  description: |
+    The de facto tool to create conda packages. It creates environments to isolate build-times
+    dependencies and performs checks after compilation to ensure relocatability and correct runtime
+    dependencies.
+  url: https://github.com/conda/conda-build
+  docs: https://docs.conda.io/projects/conda-build/
+  audience:
+    - packagers
+  categories:
+    - package-create
+
+- name: boa
+  organization: QuantStack
+  description: |
+    boa is a package builder for conda packages. It is re-using a lot of the conda-build
+    infrastructure, but replaces some parts. Specifically the solving stage is done using mamba,
+    the fast conda-alternative (implemented in C++ and based on libsolv).
+  url: https://github.com/mamba-org/boa
+  docs: https://boa-build.readthedocs.io/
+  audience:
+    - packagers
+  categories:
+    - conda
+    - package-create
+
+- name: mambabuild
+  organization:
+  description: |
+    A drop-in replacement for conda-build provided by Boa. It relies on conda-build for most parts,
+    but replaces the solver and the error reports. It provides the `conda mambabuild` command.
+  url: https://github.com/mamba-org/boa
+  docs: https://boa-build.readthedocs.io/en/latest/mambabuild.html
+  audience:
+    - packagers
+  categories:
+    - conda
+    - package-create
+
+- name: meson
+  organization: mesonbuild
+  description: |
+    Meson is an open source build system meant to be both extremely fast, and, even more importantly,
+    as user friendly as possible. It can produce Python wheels through the mesonpep517 package.
+  url: https://github.com/mesonbuild/meson
+  docs: https://mesonbuild.com/
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - build-tools
+
+- name: mesonpep517
+  organization: thiblahute
+  description: |
+    A simple module that implements PEP517 for the meson build system.
+  url: https://gitlab.com/thiblahute/mesonpep517
+  docs: https://thiblahute.gitlab.io/mesonpep517/
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - build-tools
+    - wheels
+
+- name: pypa-build
+  organization: PyPA
+  description: |
+    It invokes the PEP 517 hooks to build a distribution package. It is a simple build tool and does
+    not perform any dependency management.
+  url: https://github.com/pypa/build
+  docs: https://pypa-build.readthedocs.io
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - wheels
+
+- name: scikit-build
+  organization: scikit-build
+  description: |
+    Improved build system generator for CPython C/C++/Fortran/Cython extensions.
+    The scikit-build package is fundamentally just glue between the setuptools Python module and
+    CMake.
+  url: https://github.com/scikit-build/scikit-build
+  docs: https://scikit-build.readthedocs.io/
+  audience:
+    - packagers
+  categories:
+    - wheels
+    - package-create
+
+- name: setuptools
+  organization: PyPA
+  description: |
+    Setuptools is a collection of enhancements to the Python distutils library to easily build
+    and distribute Python packages.
+  url: https://github.com/pypa/setuptools
+  docs: https://setuptools.readthedocs.io
+  audience:
+    - packagers
+  categories:
+    - wheels
+    - package-create
+
+- name: distutils
+  organization: Python
+  description: |
+    The distutils package in the standard library provides support for building and installing
+    additional modules into a Python installation. Most Python users will not want to use this
+    module directly, but enhanced alternatives like setuptools.
+  url: https://docs.python.org/3/library/distutils.html
+  docs: https://docs.python.org/3/library/distutils.html
+  audience:
+    - packagers
+  categories:
+    - wheels
+    - package-create
+
+- name: numpy.distutils
+  organization: NumPy
+  description: |
+    This Numpy subpackage provides enhanced distutils functionality to make it easier to build
+    and install sub-packages, auto-generate code, and extension modules that use Fortran-compiled
+    libraries.
+  url: https://numpy.org/doc/stable/reference/distutils.html
+  docs: https://numpy.org/doc/stable/reference/distutils.html
+  audience:
+    - packagers
+  categories:
+    - wheels
+    - package-create
+
+- name: constructor
+  organization: Anaconda
+  description: |
+    Constructor is a tool which allows constructing an installer for a collection of conda packages.
+    It solves needed packages using user-provided specifications, and bundles those packages.
+  url: https://github.com/conda/constructor
+  docs: https://github.com/conda/constructor/blob/master/CONSTRUCT.md
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - conda
+
+- name: pex
+  organization: pantsbuild
+  description: |
+    pex is a library for generating .pex (Python EXecutable) files which are executable Python
+    environments in the spirit of virtualenvs. pex is an expansion upon the ideas outlined in PEP 441.
+  url: https://github.com/pantsbuild/pex
+  docs: https://pex.readthedocs.io/
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - wheels
+
+- name: shiv
+  organization: LinkedIn
+  description: |
+    shiv is a command line utility for building fully self contained Python zipapps as outlined in
+    PEP 441, but with all their dependencies included.
+  url: https://github.com/linkedin/shiv
+  docs: https://shiv.readthedocs.io
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - wheels
+
+- name: pyinstaller
+  organization: pyinstaller
+  description: |
+    PyInstaller freezes (packages) Python applications into stand-alone executables, under Windows,
+    GNU/Linux, Mac OS X, FreeBSD, Solaris and AIX.
+  url: https://github.com/pyinstaller/pyinstaller
+  docs: https://www.pyinstaller.org/
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - wheels
+
+- name: conda-pack
+  organization: Anaconda
+  description: |
+    conda-pack is a command line tool for creating relocatable archives of conda environments
+    that can be installed on other systems and locations.
+  url: https://github.com/conda/conda-pack
+  docs: https://conda.github.io/conda-pack/
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - conda
+
+- name: conda-docker
+  organization: conda-incubator
+  description: |
+    Create minimal Docker images from conda environments, without using Docker.
+  url: https://github.com/conda-incubator/conda-docker
+  docs: https://github.com/conda-incubator/conda-docker
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - conda
+
+- name: conda-store
+  organization: Quansight
+  description: |
+    The core philosophy of conda-store is to serve identical conda environments in as many ways as
+    possible. Conda Store controls the environment lifecycle: management, builds, and serving of
+    environments.
+  url: https://github.com/Quansight/conda-store
+  docs: https://conda-store.readthedocs.io
+  audience:
+    - packagers
+  categories:
+    - package-bundler
+    - conda
+
+- name: anaconda-client
+  organization: Anaconda
+  description: |
+    This is a command line client that provides an interface to Anaconda Cloud. Primarily used to
+    upload packages to Anaconda.org channels.
+  url: https://github.com/Anaconda-Platform/anaconda-client
+  docs: https://docs.anaconda.org/anacondaorg/user-guide/howto/#use-the-anaconda-client-cli
+  audience:
+    - packagers
+  categories:
+    - package-publish
+    - conda
+
+- name: twine
+  organization: PyPA
+  description: |
+    A utility for publishing Python packages on PyPI. It provides build system independent uploads of
+    source and binary distribution artifacts for both new and existing projects.
+  url: https://github.com/pypa/twine
+  docs: https://twine.readthedocs.io/
+  audience:
+    - packagers
+  categories:
+    - package-publish
+    - wheels
+
+- name: zest.releaser
+  organization: Zest Software
+  description: |
+    zest.releaser is collection of command-line programs to help you automate the task of releasing a
+    Python project. It updates the version number, populates the changelog, creates the tags and,
+    optionally, publishes to PyPI.
+  url: https://github.com/zestsoftware/zest.releaser
+  docs: https://zestreleaser.readthedocs.io/en/latest/
+  audience:
+    - packagers
+  categories:
+    - release-workflow
+    - package-publish
+
+- name: setuptools_scm
+  organization: PyPA
+  description: |
+    setuptools_scm handles managing your Python package versions in SCM metadata instead of declaring
+    them as the version argument or in a SCM managed file.
+  url: https://github.com/pypa/setuptools_scm
+  docs: https://github.com/pypa/setuptools_scm
+  audience:
+    - packagers
+  categories:
+    - release-workflow
+
+- name: versioneer
+  organization: Brian Warner
+  description: |
+    This is a tool for managing a recorded version number in distutils-based python projects.
+    The goal is to remove the tedious and error-prone "update the embedded version string" step
+    from your release process. Making a new release should be as easy as recording a new tag in your
+    version-control system, and maybe making new tarballs.
+  url: https://github.com/python-versioneer/python-versioneer
+  docs: https://github.com/python-versioneer/python-versioneer
+  audience:
+    - packagers
+  categories:
+    - release-workflow
+
+- name: conda-smithy
+  organization: conda-forge
+  description: |
+    conda-smithy is a tool for combining a conda recipe with configurations to build using
+    freely hosted CI services into a single repository, also known as a feedstock.
+  url: https://github.com/conda-forge/conda-smithy
+  docs: https://github.com/conda-forge/conda-smithy#overview
+  audience:
+    - packagers
+  categories:
+    - infra
+    - conda
+
+- name: conda-forge-ci-setup
+  organization: conda-forge
+  description: |
+    A package installed by conda-forge each time a build is run on CI. It normalizes the system
+    settings found on different CI providers for a consistent build configuration across platforms.
+  url: https://github.com/conda-forge/conda-forge-ci-setup-feedstock
+  docs: https://github.com/conda-forge/conda-forge-ci-setup-feedstock
+  audience:
+    - packagers
+  categories:
+    - infra
+    - conda
+
+- name: conda-forge-pinning
+  organization: conda-forge
+  description: |
+    The baseline versions of software for the conda-forge ecosystem, essential to maintain
+    ABI compatibility across the channel.
+  url: https://github.com/conda-forge/conda-forge-pinning-feedstock
+  docs: https://github.com/conda-forge/conda-forge-pinning-feedstock
+  audience:
+    - packagers
+  categories:
+    - infra
+    - conda
+
+- name: cibuildwheel
+  organization: PyPA
+  description: |
+    Build Python wheels for all the platforms on CI with minimal configuration.
+  url: https://github.com/pypa/cibuildwheel
+  docs: https://cibuildwheel.readthedocs.io
+  audience:
+    - packagers
+  categories:
+    - infra
+    - wheels
+
+- name: multibuild
+  organization: Matthew Brett
+  description: |
+    Machinery for building and testing Python Wheels for Linux, OSX and (less flexibly) Windows.
+  url: https://github.com/matthew-brett/multibuild
+  docs: https://github.com/matthew-brett/multibuild
+  audience:
+    - packagers
+  categories:
+    - infra
+    - wheels
+
+- name: conda-skeleton
+  organization: Anaconda
+  description: |
+    The conda-skeleton command picks up the PyPI package metadata and prepares an equivalent
+    conda-build recipe you can use to build a conda package.
+  url: https://github.com/conda/conda-build/tree/master/conda_build/skeletons
+  docs: https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - conda
+    - wheels
+
+- name: conda-package-handling
+  organization: Anaconda
+  description: |
+    Create, extract and convert conda packages of various formats.
+  url: https://github.com/conda/conda-package-handling
+  docs: https://github.com/conda/conda-package-handling
+  audience:
+    - packagers
+  categories:
+    - conda
+    - package-create
+
+- name: grayskull
+  organization: conda-incubator
+  description: |
+    The Grayskull project was created with the intention to eventually replace the conda skeleton.
+    The main goal of this project is to generate concise recipes for conda-forge.
+  url: https://github.com/conda-incubator/grayskull
+  docs: https://github.com/conda-incubator/grayskull
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - conda
+    - wheels
+
+- name: conda-press
+  organization: conda-incubator
+  description: |
+    Press conda packages into wheels. Is allows us to build out a pip-usable package index
+    which is ABI compatible with conda packages.
+  url: https://github.com/conda-incubator/conda-press
+  docs: https://github.com/conda-incubator/conda-press
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - conda
+    - wheels
+
+- name: conda-verify
+  organization: Anaconda
+  description: |
+    conda-verify is a tool for (passively) verifying conda recipes and conda packages. The purpose of
+    this verification process is to ensure that recipes don't contain obvious bugs.
+  url: https://github.com/conda/conda-verify
+  docs: https://github.com/conda/conda-verify
+  audience:
+    - packagers
+  categories:
+    - package-audit
+
+- name: conda-content-trust
+  organization: Anaconda
+  description: |
+    Signing and verification tools for Conda based on The Update Framework
+  url: https://github.com/conda/conda-content-trust
+  docs: https://docs.anaconda.com/anaconda-commercial/security/#anaconda-content-trust-conda-package-signature-verification
+  audience:
+    - packagers
+  categories:
+    - conda
+    - package-audit
+
+- name: auditwheel
+  organization: PyPA
+  description: |
+    a command line tool to facilitate the creation of Python wheel packages for Linux (containing
+    pre-compiled binary extensions) that are compatible with a wide variety of Linux distributions
+  url: https://github.com/pypa/auditwheel
+  docs: https://github.com/pypa/auditwheel
+  audience:
+    - packagers
+  categories:
+    - package-create
+    - package-audit
+    - wheels
+
+- name: pip-check
+  organization: PyPA
+  description: |
+    Verify installed packages have compatible dependencies.
+  url: https://pip.pypa.io/en/stable/cli/pip_check/
+  docs: https://pip.pypa.io/en/stable/cli/pip_check/
+  audience:
+    - packagers
+  categories:
+    - package-audit
+    - wheels
+
+- name: delocate
+  organization: Matthew Brett
+  description: |
+    Find and copy needed dynamic libraries into python wheels on MacOS
+  url: https://github.com/matthew-brett/delocate
+  docs: https://github.com/matthew-brett/delocate
+  audience:
+    - packages
+  categories:
+    - package-create
+    - package-audit
+    - wheels
+
+- name: check-wheel-contents
+  organization: John T. Wodder II
+  description: |
+    Check the contents of your wheel. It will notify you of several common errors & mistakes that
+    can be detected.
+  url: https://github.com/jwodder/check-wheel-contents
+  docs: https://github.com/jwodder/check-wheel-contents
+  audience:
+    - packagers
+  categories:
+    - package-audit
+    - wheels
+
+- name: machomachomangler
+  organization: Nathaniel J. Smith
+  description: |
+    This is a little library for mangling Mach-O and PE files in various ways. These are the formats
+    used for executables and shared libraries on MacOS and Windows, respectively.
+  url: https://github.com/njsmith/machomachomangler
+  docs: https://github.com/njsmith/machomachomangler
+  audience:
+    - packagers
+  categories:
+    - package-audit
+    - build-tools
+
+- name: patchelf
+  organization: NixOS
+  description: |
+    A small utility to modify the dynamic linker and RPATH of ELF executables.
+  url: https://github.com/NixOS/patchelf
+  docs: https://github.com/NixOS/patchelf
+  audience:
+    - packagers
+  categories:
+    - package-audit
+    - build-tools
+
+- name: lief
+  organization: Quarks Lab
+  description: |
+    The purpose of this project is to provide a cross platform library which can parse, modify
+    and abstract ELF, PE and MachO formats.
+  url: https://github.com/lief-project/LIEF
+  docs: https://lief.quarkslab.com/
+  audience:
+    - packagers
+  categories:
+    - package-audit
+    - build-tools
+
+- name: virtualenv
+  organization: PyPA
+  description: |
+    virtualenv is a tool to create isolated Python environments. Since Python 3.3, a subset of it
+    has been integrated into the standard library under the venv module.
+  url: https://github.com/pypa/virtualenv
+  docs: https://virtualenv.pypa.io/
+  audience:
+    - users
+  categories:
+    - virtual-environments
+
+- name: venv
+  organization: Python
+  description: |
+    The venv module in the standard library provides support for creating lightweight virtual
+    environments with their own site directories, optionally isolated from system site directories.
+  url: https://docs.python.org/3/library/venv.html
+  docs: https://docs.python.org/3/library/venv.html#venv-def
+  audience:
+    - users
+  categories:
+    - virtual-environments
+
+- name: virtualenvwrapper
+  organization: virtualenvwrapper
+  description: |
+    virtualenvwrapper is a set of extensions to Ian Bicking’s virtualenv tool. The extensions include
+    wrappers for creating and deleting virtual environments and otherwise managing your development
+    workflow.
+  url: https://bitbucket.org/virtualenvwrapper/virtualenvwrapper
+  docs: https://virtualenvwrapper.readthedocs.io/
+  audience:
+    - users
+  categories:
+    - virtual-environments
+    - dev-workflow
+
+- name: pew
+  organization: berdario
+  description: |
+    Python Env Wrapper is a set of commands to manage multiple virtual environments. Pew can create,
+    delete and copy your environments, using a single command to switch to them wherever you are,
+    while keeping them in a single (configurable) location.
+  url: https://github.com/berdario/pew
+  docs: https://github.com/berdario/pew#usage
+  audience:
+    - users
+  categories:
+    - virtual-environments
+    - dev-workflow
+
+- name: conda-env
+  organization: Anaconda
+  description: |
+    Conda/Mamba/Micromamba are able to handle their own virtual environments through 'conda env'.
+    They are not compatible with virtualenv-type environments, but they serve the same purpose.
+  url: https://github.com/conda/conda/tree/master/conda_env
+  docs: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+  audience:
+    - users
+  categories:
+    - virtual-environments
+    - conda
+
+- name: conda-index
+  organization: Anaconda
+  description: |
+    Update package index metadata files (channeldata.json, repodata.json) in directories containing
+    conda packages.
+  url: https://github.com/conda/conda-build/blob/master/conda_build/cli/main_index.py
+  docs: https://conda.io/projects/conda-build/en/latest/resources/commands/conda-index.html
+  audience:
+    - packagers
+    - users
+  categories:
+    - package-serve
+    - infra
+    - conda
+
+- name: conda-mirror
+  organization: conda-incubator
+  description: |
+    Mirrors an upstream conda channel to a local directory.
+  url: https://github.com/conda-incubator/conda-mirror
+  docs: https://github.com/conda-incubator/conda-mirror#conda-mirror
+  audience:
+    - packagers
+    - users
+  categories:
+    - package-serve
+    - infra
+    - conda
+
+- name: quetz
+  organization: QuantStack
+  description: |
+    The quetz project is an open source server for conda packages. It reimplements Anaconda.org
+    functionalities with an API-first approach.
+  url: https://github.com/mamba-org/quetz
+  docs: https://quetz.readthedocs.io
+  audience:
+    - packagers
+  categories:
+    - package-serve
+    - infra
+    - conda
+
+- name: warehouse
+  organization: PyPA
+  description: |
+    Warehouse is the software that powers PyPI.
+  url: https://github.com/pypa/warehouse
+  docs: https://warehouse.readthedocs.io/
+  audience:
+    - packagers
+  categories:
+    - package-serve
+    - wheels
+    - infra
+
+- name: devpi
+  organization: devpi
+  description: |
+    Python PyPi staging server and packaging, testing, release tool
+  url: https://github.com/devpi/devpi
+  docs: https://devpi.net/docs/devpi/devpi/6.0/+d/index.html
+  audience:
+    - packagers
+  categories:
+    - package-serve
+    - wheels
+    - infra
+
+- name: pypiserver
+  organization: pypiserver
+  description: |
+    pypiserver is a minimal PyPI compatible server for pip or easy_install. It is based on bottle and
+    serves packages from regular directories.
+  url: https://github.com/pypiserver/pypiserver
+  docs: https://github.com/pypiserver/pypiserver#table-of-contents
+  audience:
+    - packagers
+  categories:
+    - package-serve
+    - wheels
+    - infra
+
+- name: ensurepip
+  organization: Python
+  description: |
+    The ensurepip standard library package provides support for bootstrapping the pip installer into
+    an existing Python installation or virtual environment.
+  url: https://github.com/python/cpython/tree/main/Lib/ensurepip
+  docs: https://docs.python.org/3/library/ensurepip.html
+  audience:
+    - users
+  categories:
+    - provision
+    - wheels
+
+- name: ensureconda
+  organization: conda-incubator
+  description: |
+    Ensureconda is a CLI tool that will find a preexisting conda/mamba executable, install one if
+    none was found, and return the path of the found/installed location.
+  url: https://github.com/conda-incubator/ensureconda
+  docs: https://github.com/conda-incubator/ensureconda#installation
+  audience:
+    - users
+  categories:
+    - provision
+    - conda
+
+- name: condacolab
+  organization: conda-incubator
+  description: |
+    A Python package to install Conda (and friends) on live Google Colab instances.
+  url: https://github.com/conda-incubator/condacolab
+  docs: https://github.com/conda-incubator/condacolab#usage
+  audience:
+    - users
+  categories:
+    - provision
+    - conda
+
+- name: setup-miniconda
+  organization: conda-incubator
+  description: |
+    An action to enable the preinstalled Miniconda or download and install
+    Miniconda/Miniforge/Mambaforge on Github Actions workflows.
+  url: https://github.com/conda-incubator/setup-miniconda
+  docs: https://github.com/conda-incubator/setup-miniconda#conda-incubatorsetup-miniconda
+  audience:
+    - users
+  categories:
+    - provision
+    - conda
+
+- name: provision-with-micromamba
+  organization: QuantStack
+  description: |
+    A GitHub Actions action to create conda environments with micromamba.
+  url: https://github.com/mamba-org/provision-with-micromamba
+  docs: https://github.com/mamba-org/provision-with-micromamba#inputs
+  audience:
+    - users
+  categories:
+    - provision
+    - conda
+
+- name: gator
+  organization: QuantStack
+  description: |
+    The Mamba Navigator, a Web UI for managing conda environments. Provides Conda/Mamba environment
+    and package management as a standalone application or as extension for JupyterLab.
+  url: https://github.com/mamba-org/gator
+  docs: https://github.com/mamba-org/gator
+  audience:
+    - users
+  categories:
+    - package-install
+    - virtual-environment
+    - gui
+    - conda
+
+- name: vscode-micromamba
+  organization: QuantStack
+  description: |
+    Provides a convenient way to install developer tools in VSCode workspaces from conda-forge
+    with micromamba. Get NodeJS, Go, Rust, Python or JupyterLab installed by running a single command.
+  url: https://github.com/mamba-org/vscode-micromamba
+  docs: https://github.com/mamba-org/gator
+  audience:
+    - users
+  categories:
+    - package-install
+    - virtual-environment
+    - dev-workflow
+    - conda

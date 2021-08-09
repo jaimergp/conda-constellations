@@ -1,8 +1,0 @@
-name: conda-constellations
-channels:
-  - conda-forge
-dependencies:
-  - mkdocs
-  - mkdocs-material
-  - mkdocs-material-extensions
-  - pymdown-extensions
