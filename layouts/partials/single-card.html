@@ -1,25 +1,32 @@
-<div class="card" >
+<div class="card">
     <div class="card-header">
-        <h5 class="card-title"><a href="{{ .url }}" target="_blank" title="Go to {{ .name }}'s website (new page)">{{ .name }}</a></h5>
+        <h5 class="card-title" id="{{ .name | urlize }}">
+            {{ with .url }}
+                <a href="{{ . }}" target="_blank" title="Open website in a new page" rel="noopener noreferrer">
+            {{ end }}
+            <span>{{- .name -}}</span>
+            {{- with .url -}}
+                </a>
+            {{ end }}
+        </h5>
         {{ with .organization }}
         <h6 class="card-subtitle text-muted">{{ . }}</h6>
         {{ end }}
     </div>
     <div class="card-body">
         <p class="card-text">{{ .description | markdownify }}</p>
-        <a href="{{ .url }}" class="card-link" target="_blank"></i>Project</a>
+        {{ with .url }}
+            <a href="{{ . }}" class="card-link" target="_blank" rel="noopener noreferrer">Website</a>
+        {{ end }}
         {{ with .docs }}
-            <a href="{{ . }}" class="card-link" target="_blank">Documentation</a>
+            <a href="{{ . }}" class="card-link" target="_blank" rel="noopener noreferrer">Documentation</a>
         {{ end }}
     </div>
-    {{ with .audience }}
-    <ul class="list-group list-group-flush">
-        <li class="list-group-item">For {{ delimit .  ", " }}</li>
-    </ul>
-    {{ end }}
+    {{ $colorMap := dict "for-users" "primary" "for-packagers" "danger" "for-infra" "dark" }}
     <div class="card-footer bg-transparent">
+        <span>Tags:</span>
         {{ range .categories }}
-            <span class="badge rounded-pill bg-secondary">{{ . }}</span>
+            <span class="badge rounded-pill bg-{{ index $colorMap . | default "secondary" }}" data-tag-value="{{ . }}">{{ . }}</span>
         {{ end }}
     </div>
 </div>

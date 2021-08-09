@@ -6,7 +6,6 @@
 # docs: str
 # image: str (path or url)
 # license: str
-# audience: one of users, packagers, infra
 # categories: list of str
 # # available categories: package-install, package-create, package-publish, virtual-environment,
 #                         dev-workflow, build-tools, package-bundler, package-audit, package-serve,
@@ -18,9 +17,8 @@
     A cross-platform, language-agnostic package manager created by Anaconda Inc.
   url: https://github.com/conda/conda
   docs: https://docs.conda.io/
-  audience:
-    - users
   categories:
+    - for-users
     - package-install
     - virtual-environment
     - conda
@@ -40,15 +38,14 @@
     compatible as possible.
   url: https://github.com/mamba-org/mamba
   docs: https://mamba.readthedocs.io/
-  audience:
-    - users
   categories:
+    - for-users
     - package-install
     - virtual-environment
     - conda
 
 - name: micromamba
-  organization: mamba-org
+  organization: QuantStack
   description: |
     micromamba is a tiny version of the mamba package manager. It is a pure C++ package
     with a separate command line interface. It can be used to bootstrap environments
@@ -59,9 +56,8 @@
     which allows you to drop it in some place and just execute it.
   url: https://github.com/mamba-org/mamba#micromamba
   docs: https://mamba.readthedocs.io/en/latest/user_guide/micromamba.html
-  audience:
-    - users
   categories:
+    - for-users
     - package-install
     - virtual-environment
     - conda
@@ -73,9 +69,8 @@
     Python Package Index and other indexes.
   url: https://github.com/pypa/pip
   docs: https://pip.pypa.io/
-  audience:
-    - users
   categories:
+    - for-users
     - package-install
     - wheels
 
@@ -86,9 +81,8 @@
     the right stack everywhere.
   url: https://github.com/python-poetry/poetry
   docs: https://python-poetry.org/docs/
-  audience:
-    - users
     - packagers
+    - for-users
   categories:
     - package-install
     - package-create
@@ -104,9 +98,8 @@
     about packaging and help you avoid common mistakes.
   url: https://github.com/takluyver/flit
   docs: https://flit.readthedocs.io/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - package-publish
     - wheels
@@ -117,9 +110,8 @@
     A conda tool to work with multiple projects in development mode.
   url: https://github.com/ESSS/conda-devenv
   docs: https://conda-devenv.readthedocs.io
-  audience:
-    - users
   categories:
+    - for-users
     - dev-workflow
     - conda
 
@@ -129,9 +121,8 @@
     Pipenv harnesses Pipfile, pip, and virtualenv into one single command.
   url: https://github.com/pypa/pipenv
   docs: https://pipenv.pypa.io
-  audience:
-    - users
   categories:
+    - for-users
     - dev-workflow
     - wheels
 
@@ -143,9 +134,8 @@
     dependencies.
   url: https://github.com/conda/conda-build
   docs: https://docs.conda.io/projects/conda-build/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
 
 - name: boa
@@ -156,9 +146,8 @@
     the fast conda-alternative (implemented in C++ and based on libsolv).
   url: https://github.com/mamba-org/boa
   docs: https://boa-build.readthedocs.io/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - conda
     - package-create
 
@@ -169,9 +158,8 @@
     but replaces the solver and the error reports. It provides the `conda mambabuild` command.
   url: https://github.com/mamba-org/boa
   docs: https://boa-build.readthedocs.io/en/latest/mambabuild.html
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - conda
     - package-create
 
@@ -182,9 +170,8 @@
     as user friendly as possible. It can produce Python wheels through the mesonpep517 package.
   url: https://github.com/mesonbuild/meson
   docs: https://mesonbuild.com/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - build-tools
 
@@ -194,9 +181,8 @@
     A simple module that implements PEP517 for the meson build system.
   url: https://gitlab.com/thiblahute/mesonpep517
   docs: https://thiblahute.gitlab.io/mesonpep517/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - build-tools
     - wheels
@@ -208,9 +194,8 @@
     not perform any dependency management.
   url: https://github.com/pypa/build
   docs: https://pypa-build.readthedocs.io
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - wheels
 
@@ -222,9 +207,8 @@
     CMake.
   url: https://github.com/scikit-build/scikit-build
   docs: https://scikit-build.readthedocs.io/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - wheels
     - package-create
 
@@ -235,9 +219,8 @@
     and distribute Python packages.
   url: https://github.com/pypa/setuptools
   docs: https://setuptools.readthedocs.io
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - wheels
     - package-create
 
@@ -249,9 +232,8 @@
     module directly, but enhanced alternatives like setuptools.
   url: https://docs.python.org/3/library/distutils.html
   docs: https://docs.python.org/3/library/distutils.html
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - wheels
     - package-create
 
@@ -263,9 +245,8 @@
     libraries.
   url: https://numpy.org/doc/stable/reference/distutils.html
   docs: https://numpy.org/doc/stable/reference/distutils.html
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - wheels
     - package-create
 
@@ -276,9 +257,8 @@
     It solves needed packages using user-provided specifications, and bundles those packages.
   url: https://github.com/conda/constructor
   docs: https://github.com/conda/constructor/blob/master/CONSTRUCT.md
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - conda
 
@@ -289,9 +269,8 @@
     environments in the spirit of virtualenvs. pex is an expansion upon the ideas outlined in PEP 441.
   url: https://github.com/pantsbuild/pex
   docs: https://pex.readthedocs.io/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - wheels
 
@@ -302,9 +281,8 @@
     PEP 441, but with all their dependencies included.
   url: https://github.com/linkedin/shiv
   docs: https://shiv.readthedocs.io
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - wheels
 
@@ -315,9 +293,8 @@
     GNU/Linux, Mac OS X, FreeBSD, Solaris and AIX.
   url: https://github.com/pyinstaller/pyinstaller
   docs: https://www.pyinstaller.org/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - wheels
 
@@ -328,9 +305,8 @@
     that can be installed on other systems and locations.
   url: https://github.com/conda/conda-pack
   docs: https://conda.github.io/conda-pack/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - conda
 
@@ -340,9 +316,8 @@
     Create minimal Docker images from conda environments, without using Docker.
   url: https://github.com/conda-incubator/conda-docker
   docs: https://github.com/conda-incubator/conda-docker
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - conda
 
@@ -354,9 +329,8 @@
     environments.
   url: https://github.com/Quansight/conda-store
   docs: https://conda-store.readthedocs.io
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-bundler
     - conda
 
@@ -367,9 +341,8 @@
     upload packages to Anaconda.org channels.
   url: https://github.com/Anaconda-Platform/anaconda-client
   docs: https://docs.anaconda.org/anacondaorg/user-guide/howto/#use-the-anaconda-client-cli
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-publish
     - conda
 
@@ -380,9 +353,8 @@
     source and binary distribution artifacts for both new and existing projects.
   url: https://github.com/pypa/twine
   docs: https://twine.readthedocs.io/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-publish
     - wheels
 
@@ -394,9 +366,8 @@
     optionally, publishes to PyPI.
   url: https://github.com/zestsoftware/zest.releaser
   docs: https://zestreleaser.readthedocs.io/en/latest/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - release-workflow
     - package-publish
 
@@ -407,9 +378,8 @@
     them as the version argument or in a SCM managed file.
   url: https://github.com/pypa/setuptools_scm
   docs: https://github.com/pypa/setuptools_scm
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - release-workflow
 
 - name: versioneer
@@ -421,9 +391,8 @@
     version-control system, and maybe making new tarballs.
   url: https://github.com/python-versioneer/python-versioneer
   docs: https://github.com/python-versioneer/python-versioneer
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - release-workflow
 
 - name: conda-smithy
@@ -433,9 +402,8 @@
     freely hosted CI services into a single repository, also known as a feedstock.
   url: https://github.com/conda-forge/conda-smithy
   docs: https://github.com/conda-forge/conda-smithy#overview
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - infra
     - conda
 
@@ -446,9 +414,8 @@
     settings found on different CI providers for a consistent build configuration across platforms.
   url: https://github.com/conda-forge/conda-forge-ci-setup-feedstock
   docs: https://github.com/conda-forge/conda-forge-ci-setup-feedstock
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - infra
     - conda
 
@@ -459,9 +426,8 @@
     ABI compatibility across the channel.
   url: https://github.com/conda-forge/conda-forge-pinning-feedstock
   docs: https://github.com/conda-forge/conda-forge-pinning-feedstock
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - infra
     - conda
 
@@ -471,9 +437,8 @@
     Build Python wheels for all the platforms on CI with minimal configuration.
   url: https://github.com/pypa/cibuildwheel
   docs: https://cibuildwheel.readthedocs.io
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - infra
     - wheels
 
@@ -483,9 +448,8 @@
     Machinery for building and testing Python Wheels for Linux, OSX and (less flexibly) Windows.
   url: https://github.com/matthew-brett/multibuild
   docs: https://github.com/matthew-brett/multibuild
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - infra
     - wheels
 
@@ -496,9 +460,8 @@
     conda-build recipe you can use to build a conda package.
   url: https://github.com/conda/conda-build/tree/master/conda_build/skeletons
   docs: https://conda.io/projects/conda-build/en/latest/user-guide/tutorials/build-pkgs-skeleton.html
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - conda
     - wheels
@@ -509,9 +472,8 @@
     Create, extract and convert conda packages of various formats.
   url: https://github.com/conda/conda-package-handling
   docs: https://github.com/conda/conda-package-handling
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - conda
     - package-create
 
@@ -522,9 +484,8 @@
     The main goal of this project is to generate concise recipes for conda-forge.
   url: https://github.com/conda-incubator/grayskull
   docs: https://github.com/conda-incubator/grayskull
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - conda
     - wheels
@@ -536,9 +497,8 @@
     which is ABI compatible with conda packages.
   url: https://github.com/conda-incubator/conda-press
   docs: https://github.com/conda-incubator/conda-press
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - conda
     - wheels
@@ -550,9 +510,8 @@
     this verification process is to ensure that recipes don't contain obvious bugs.
   url: https://github.com/conda/conda-verify
   docs: https://github.com/conda/conda-verify
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-audit
 
 - name: conda-content-trust
@@ -561,9 +520,8 @@
     Signing and verification tools for Conda based on The Update Framework
   url: https://github.com/conda/conda-content-trust
   docs: https://docs.anaconda.com/anaconda-commercial/security/#anaconda-content-trust-conda-package-signature-verification
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - conda
     - package-audit
 
@@ -574,9 +532,8 @@
     pre-compiled binary extensions) that are compatible with a wide variety of Linux distributions
   url: https://github.com/pypa/auditwheel
   docs: https://github.com/pypa/auditwheel
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-create
     - package-audit
     - wheels
@@ -587,9 +544,8 @@
     Verify installed packages have compatible dependencies.
   url: https://pip.pypa.io/en/stable/cli/pip_check/
   docs: https://pip.pypa.io/en/stable/cli/pip_check/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-audit
     - wheels
 
@@ -599,9 +555,8 @@
     Find and copy needed dynamic libraries into python wheels on MacOS
   url: https://github.com/matthew-brett/delocate
   docs: https://github.com/matthew-brett/delocate
-  audience:
-    - packages
   categories:
+    - for-packagers
     - package-create
     - package-audit
     - wheels
@@ -613,9 +568,8 @@
     can be detected.
   url: https://github.com/jwodder/check-wheel-contents
   docs: https://github.com/jwodder/check-wheel-contents
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-audit
     - wheels
 
@@ -626,9 +580,8 @@
     used for executables and shared libraries on MacOS and Windows, respectively.
   url: https://github.com/njsmith/machomachomangler
   docs: https://github.com/njsmith/machomachomangler
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-audit
     - build-tools
 
@@ -638,9 +591,8 @@
     A small utility to modify the dynamic linker and RPATH of ELF executables.
   url: https://github.com/NixOS/patchelf
   docs: https://github.com/NixOS/patchelf
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-audit
     - build-tools
 
@@ -651,9 +603,8 @@
     and abstract ELF, PE and MachO formats.
   url: https://github.com/lief-project/LIEF
   docs: https://lief.quarkslab.com/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-audit
     - build-tools
 
@@ -664,10 +615,9 @@
     has been integrated into the standard library under the venv module.
   url: https://github.com/pypa/virtualenv
   docs: https://virtualenv.pypa.io/
-  audience:
-    - users
   categories:
-    - virtual-environments
+    - for-users
+    - virtual-environment
 
 - name: venv
   organization: Python
@@ -676,10 +626,9 @@
     environments with their own site directories, optionally isolated from system site directories.
   url: https://docs.python.org/3/library/venv.html
   docs: https://docs.python.org/3/library/venv.html#venv-def
-  audience:
-    - users
   categories:
-    - virtual-environments
+    - for-users
+    - virtual-environment
 
 - name: virtualenvwrapper
   organization: virtualenvwrapper
@@ -689,10 +638,9 @@
     workflow.
   url: https://bitbucket.org/virtualenvwrapper/virtualenvwrapper
   docs: https://virtualenvwrapper.readthedocs.io/
-  audience:
-    - users
   categories:
-    - virtual-environments
+    - for-users
+    - virtual-environment
     - dev-workflow
 
 - name: pew
@@ -703,10 +651,9 @@
     while keeping them in a single (configurable) location.
   url: https://github.com/berdario/pew
   docs: https://github.com/berdario/pew#usage
-  audience:
-    - users
   categories:
-    - virtual-environments
+    - for-users
+    - virtual-environment
     - dev-workflow
 
 - name: conda-env
@@ -716,10 +663,9 @@
     They are not compatible with virtualenv-type environments, but they serve the same purpose.
   url: https://github.com/conda/conda/tree/master/conda_env
   docs: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
-  audience:
-    - users
   categories:
-    - virtual-environments
+    - for-users
+    - virtual-environment
     - conda
 
 - name: conda-index
@@ -728,10 +674,10 @@
     Update package index metadata files (channeldata.json, repodata.json) in directories containing
     conda packages.
   url: https://github.com/conda/conda-build/blob/master/conda_build/cli/main_index.py
-  docs: https://conda.io/projects/conda-build/en/latest/resources/commands/conda-index.html
-  audience:
-    - packagers
+  docs:
+    https://conda.io/projects/conda-build/en/latest/resources/commands/conda-index.html
     - users
+    - for-packagers
   categories:
     - package-serve
     - infra
@@ -743,9 +689,8 @@
     Mirrors an upstream conda channel to a local directory.
   url: https://github.com/conda-incubator/conda-mirror
   docs: https://github.com/conda-incubator/conda-mirror#conda-mirror
-  audience:
-    - packagers
     - users
+    - for-packagers
   categories:
     - package-serve
     - infra
@@ -758,9 +703,8 @@
     functionalities with an API-first approach.
   url: https://github.com/mamba-org/quetz
   docs: https://quetz.readthedocs.io
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-serve
     - infra
     - conda
@@ -771,9 +715,8 @@
     Warehouse is the software that powers PyPI.
   url: https://github.com/pypa/warehouse
   docs: https://warehouse.readthedocs.io/
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-serve
     - wheels
     - infra
@@ -784,9 +727,8 @@
     Python PyPi staging server and packaging, testing, release tool
   url: https://github.com/devpi/devpi
   docs: https://devpi.net/docs/devpi/devpi/6.0/+d/index.html
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-serve
     - wheels
     - infra
@@ -798,9 +740,8 @@
     serves packages from regular directories.
   url: https://github.com/pypiserver/pypiserver
   docs: https://github.com/pypiserver/pypiserver#table-of-contents
-  audience:
-    - packagers
   categories:
+    - for-packagers
     - package-serve
     - wheels
     - infra
@@ -812,9 +753,8 @@
     an existing Python installation or virtual environment.
   url: https://github.com/python/cpython/tree/main/Lib/ensurepip
   docs: https://docs.python.org/3/library/ensurepip.html
-  audience:
-    - users
   categories:
+    - for-users
     - provision
     - wheels
 
@@ -825,9 +765,8 @@
     none was found, and return the path of the found/installed location.
   url: https://github.com/conda-incubator/ensureconda
   docs: https://github.com/conda-incubator/ensureconda#installation
-  audience:
-    - users
   categories:
+    - for-users
     - provision
     - conda
 
@@ -837,9 +776,8 @@
     A Python package to install Conda (and friends) on live Google Colab instances.
   url: https://github.com/conda-incubator/condacolab
   docs: https://github.com/conda-incubator/condacolab#usage
-  audience:
-    - users
   categories:
+    - for-users
     - provision
     - conda
 
@@ -850,9 +788,8 @@
     Miniconda/Miniforge/Mambaforge on Github Actions workflows.
   url: https://github.com/conda-incubator/setup-miniconda
   docs: https://github.com/conda-incubator/setup-miniconda#conda-incubatorsetup-miniconda
-  audience:
-    - users
   categories:
+    - for-users
     - provision
     - conda
 
@@ -862,9 +799,8 @@
     A GitHub Actions action to create conda environments with micromamba.
   url: https://github.com/mamba-org/provision-with-micromamba
   docs: https://github.com/mamba-org/provision-with-micromamba#inputs
-  audience:
-    - users
   categories:
+    - for-users
     - provision
     - conda
 
@@ -875,9 +811,8 @@
     and package management as a standalone application or as extension for JupyterLab.
   url: https://github.com/mamba-org/gator
   docs: https://github.com/mamba-org/gator
-  audience:
-    - users
   categories:
+    - for-users
     - package-install
     - virtual-environment
     - gui
@@ -890,9 +825,8 @@
     with micromamba. Get NodeJS, Go, Rust, Python or JupyterLab installed by running a single command.
   url: https://github.com/mamba-org/vscode-micromamba
   docs: https://github.com/mamba-org/gator
-  audience:
-    - users
   categories:
+    - for-users
     - package-install
     - virtual-environment
     - dev-workflow
