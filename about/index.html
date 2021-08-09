@@ -5,23 +5,25 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta property="og:title" content="404 Page not found" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/404.html" />
+<meta property="og:title" content="About" />
+<meta property="og:description" content="Hello!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/about/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2021-08-09T10:02:32+02:00" />
+<meta property="article:modified_time" content="2021-08-09T10:02:32+02:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="404 Page not found"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="About"/>
+<meta name="twitter:description" content="Hello!"/>
 
 
 
-    <link rel="canonical" href="http://example.org/404.html">
+    <link rel="canonical" href="http://example.org/about/">
 
     <title>
       
-        404 Page not found | Scientific packaging glossary
+        About | Scientific packaging glossary
       
     </title>
 
@@ -67,11 +69,39 @@
 
           
 
+<header>
+    <h2 class="blog-post-title">
+    <a class="text-dark text-decoration-none" href="/about/">About</a>
+</h2>
+
+    <hr>
+</header>
 <article class="blog-post">
-  <header>
-    <h2 class="blog-post-title">Page Not Found</h2>
-  </header>
-  <p>Page not found. Go back <a href="/">home</a>.</p>
+    <p>Hello!</p>
+
+
+    
+
+
+
+<form onkeydown="return event.key != 'Enter';">
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="labelFilter">
+        <label for="labelFilter">Filter by labels</label>
+    </div>
+</form>
+
+
+
+<script>
+$('#labelFilter').keyup(function (){
+    $('.card').removeClass('d-none');
+    var filter = $(this).val().toLowerCase(); 
+    if(filter) {
+        $('.all-cards').find('.card .card-footer:not(:contains("'+filter+'"))').parent().addClass('d-none');
+    }
+})
+</script>
 </article>
 
 
